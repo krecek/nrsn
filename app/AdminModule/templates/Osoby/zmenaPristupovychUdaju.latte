@@ -1,0 +1,33 @@
+{extends 'base.latte'}
+{block sekce}Změna přístupových údajů{if $admin} - {$osoba['jmeno']} {$osoba['prijmeni']}{/if}{/block}
+{block obsah}
+
+{if $opravneni['pristupove_udaje']}
+<div>
+    {form vygenerovatHesloForm}
+    <table>
+        <tr>
+        <th>E-mail:</th>
+        <td>{$osoba['email']}&nbsp;</td>
+    </tr>
+    <tr>
+        <th>Uživatelské jméno:</th>
+        <td>{$osoba['username']}&nbsp;</td>
+    </tr>
+    <tr>
+        <th>Heslo</th>
+        <td>{if $osoba['password']}***{else}&nbsp;{/if}</td>
+    </tr>
+    <tr>
+        <th></th>
+        <td>{input send }</td>
+    </tr>
+    </table>
+    {/form}
+</div>
+{/if}
+{if $admin}
+<div class="bottom_nav">
+         <a n:href="prehled $osoba['id']">zpět na osobu</a>
+</div>
+{/if}

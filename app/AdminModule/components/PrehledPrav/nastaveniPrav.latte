@@ -1,0 +1,32 @@
+<table>
+    <tr>
+        <th>Jméno:</th>
+        <td>{$osoba['jmeno']} {$osoba['prijmeni']}</td>
+    </tr>
+    <tr>
+        <th>Evidenční číslo:</th>
+        <td>{$osoba['id']}</td>
+    </tr>
+    <tr>
+        <th>Rok narození:</th>
+        <td>{$osoba['narozeni']|date:'Y'}</td>
+    </tr>
+
+    <tr>
+        <th>Uživatelské jméno:</th>
+        <td>{$osoba['username']}</td>
+    </tr>
+    <tr>
+        <th>Adresa:</th>
+        <td>{$osoba['ulice']}{if $osoba['ulice']},{/if} {$osoba['obec']} {if $osoba['obec']},{/if} {$osoba['psc']}&nbsp;</td>
+    </tr>
+    <tr>
+        <th>Telefon:</th>
+        <td>{$osoba['mobil']}{if $osoba['mobil']&&$osoba['telefon']}, {/if} {$osoba['telefon']}&nbsp;</td>
+    </tr>
+    <tr>
+        <th>Email:</th>
+        <td>{$osoba['email']}&nbsp;</td>
+    </tr>
+</table>
+{control nastaveniPravForm}

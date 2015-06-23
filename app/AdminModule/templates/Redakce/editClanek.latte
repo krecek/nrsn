@@ -1,0 +1,36 @@
+{extends 'base.latte'}
+
+{block head}
+        <script src="{$basePath}/js/tiny_mce/konfigurace.js"></script>
+        <script src="{$basePath}/js/tiny_mce/plugins/tinybrowser/tb_tinymce.js.php"></script>
+{/block}  
+
+{block sekce}{$clanek['nadpis']}{/block}
+{block obsah}
+url: <a n:href=":Web:Clanky:default $clanek['url']" onclick="if(!confirm('Neuložené úpravy budou zrušeny. Opravdu pokračovat?'))return false;">{link :Web:Clanky:default $clanek['url']}</a>
+{if $opravneni['clanek_edit']}
+    {form editClanekForm}
+       <ul class="errors" n:if="$form->hasErrors()">
+            <li n:foreach="$form->errors as $error">{$error}</li>
+       </ul>
+        <table width="100%">
+            <tr class="required">
+                <td>{input rubrika}</td>
+            </tr>
+            <tr class="required">
+                <td>{input nadpis}</td>
+            </tr>
+            <tr>
+                <td>{input perex}</td>
+            </tr>
+            <tr>
+                <td>{input obsah}</td>
+            </tr>
+            <tr>
+                <td>{input send}</td>
+            </tr>
+        </table>
+    {/form}
+{else}
+  {control nahledClanku}
+{/if}

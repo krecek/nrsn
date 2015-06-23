@@ -1,0 +1,31 @@
+{extends 'base.latte'}
+{block sekce}Přestup - {$osoba['jmeno']} {$osoba['prijmeni']} {/block}
+{block obsah}
+{if !$povolit_prestup}
+<div>
+Nelze provést přestup, osoba není registrovaná v žádném oddílu.
+</div>
+{else}
+
+{form prestupForm}
+<ul class="error" n:if="$form->hasErrors()">
+        <li n:foreach="$form->errors as $error">{$error}</li>
+</ul>
+<table>
+    <tr>
+        <th>{label registrace/}</th><td>{input registrace}</td>
+    </tr>
+    <tr>
+        <th>{label oddil /}</th><td>{input oddil}{snippet oddil}<span id="prestup_nazev_oddilu"></span>{/snippet} </td>
+     </tr>
+    <tr>
+        <th></th><td>{input send}</td>
+     </tr>
+</table>
+{/form}
+
+{/if}
+<div class="bottom_nav">
+         <a n:href="prehled $osoba['id']">zpět na osobu</a>
+</div>
+{/block}

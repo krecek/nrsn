@@ -1,0 +1,38 @@
+{extends 'base.latte'}
+{block sekce}Práva {/block}
+
+{block obsah}
+{control prehledPrav}
+{dump $moznost_uprav}
+{if $moznost_uprav}
+
+{form priraditPravaForm}
+    <ul class="errors" n:if="$form->hasErrors()">
+        <li n:foreach="$form->errors as $error">{$error}</li>
+</ul>
+
+<table>
+    <tr >
+        <th>{label popis /}</th>
+        <td>{input popis}</td>
+        <td>{input send}</td>
+    </tr>
+
+</table>
+     {label id /}
+        {input id}
+    {/form}
+{/if}
+{if isset($osoby)}
+<div>
+    Vyberte osobu:
+    <table>
+        {foreach $osoby as $osoba}
+        <tr>
+            <td><a n:href="nastaveniPrav 'osoba'=>$osoba['id']">{$osoba['prijmeni']} {$osoba['jmeno']}</a></td>
+            <td>{$osoba['narozeni']|date:'j.n.Y'}</td>            
+        </tr>
+        {/foreach}
+    </table>
+</div>
+{/if}

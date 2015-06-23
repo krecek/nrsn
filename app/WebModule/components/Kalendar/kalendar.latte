@@ -1,0 +1,33 @@
+{snippet kalendar}
+<div id="calendar"><h3 class="oddelit"><a href="{plink Kalendar:}">Kalendář akcí</a></h3>
+    <div class="ui-datepicker-inline ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all" style="display: block;">
+    <div id="calendar_title" class="ui-datepicker-header ui-widget-header ui-helper-clearfix ui-corner-all"><a class='ajax ui-datepicker-prev ui-corner-all' title='předcházející měsíc' n:href="change! $lastMonth['mesic'],$lastMonth['rok']"><span class="ui-icon ui-icon-circle-triangle-w"><<</span></a>
+        <div class="ui-datepicker-title">{$mesic_text} {$rok}</div>
+        <a class='ajax ui-datepicker-next ui-corner-all' title='další měsíc'  n:href="change! $nextMonth['mesic'],$nextMonth['rok']"><span class="ui-icon ui-icon-circle-triangle-e">>></span></a></div>
+<table>
+    <thead>
+        <tr>
+            <th>Po</th>
+            <th>Út</th>
+            <th>St</th>
+            <th>Čt</th>
+            <th>Pá</th>
+            <th>So</th>
+            <th>Ne</th>
+        </tr>
+    </thead>
+{foreach $mesic as $tyden}
+    <tr>
+    {foreach $tyden as $den}
+        {ifset $akce[$den]}<td title="{foreach $akce[$den] as $ak}{$ak['nazev']}{sep}, {/sep}{/foreach}" ><a  class='den_s_akci' href="{plink Kalendar: termin=>$rok.'-'.$month.'-'.$den, obdobi=>0}">{$den}</a></td>
+        {elseif $den}        
+        <td><a class='ui-state-default' href='{plink Kalendar: termin=>$rok.'-'.$month.'-'.$den, obdobi=>0}'>{$den}</a></td>
+        {else}<td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp</td>
+        {/ifset}
+{/foreach}
+    </tr>
+{/foreach}
+</table>
+    </div>
+</div>
+{/snippet}

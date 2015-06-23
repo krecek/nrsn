@@ -1,0 +1,87 @@
+{extends 'base.latte'}
+{block sekce}Nápověda {/block}
+{block obsah}
+<h2>Role uživatele (vaše role)</h2>
+<ul>
+    <li>
+    <h3>Moje články</h3>
+<p>Seznam článků, u kterých je autorem uživatel, nebo které může odsouhlasit k publikaci. Články jsou řazeny podle data publikace, zatím nepulikované články jsou označeny šedě. 
+    U každého článku lze (v závislosti na výši práv) provést následující akce:</p>
+<ul>
+    <li>Kliknutím na nadpis článku lze článek zobrazit nebo upravit, viz. "Nový článek".</li>
+    <li>Nastavit začátek platnosti (tj. od kdy se článek zobrazí na webových stránkách).</li>
+    <li>Články, které ještě nebyly schváleny lze schválit nastavením začátku platnosti.</li>
+    <li>Nastavit konec platnosti (tj. do kdy bude článek zobrazen na webových stránkách).</li>
+    <li>Nastavit, zda se článek zobrazí na hlavní straně. Lze nastavit, pokud má uživatel príslušná práva k rubrice, ve které je článek zařazen.</li>
+    <li>Nastavit článek jako top. Na celém webu může být pouze jeden top článek. Zvolením článku jako top se automaticky zruší tato volba u článku, který byl do té doby top.</li>
+    <li>Kliknutím na ikonu svorky zobrazit a spravovat přílohy.</li>
+    <li>Smazat článek.</li>
+</ul> 
+<br/>
+
+</li>
+<li>
+<h3>Nový článek</h3>
+<p>
+    Zvolte rubriku, do které bude článek zařazen. Na výběr jsou pouze rubriky, na které má uživatel právo ve výši alespoň 1. Dále je potřeba zadat nadpis a obsah článku. 
+    Perex není povinný. Pokud nebude vyplněn, vytvoří se automaticky z obsahu článku. Pokud má uživatel práva na zvolenou rubriku ve výši 1, po uložení je potřeba článek 
+    ještě schválit k publikaci. Má-li vyšší práva, nastaví se automaticky datum začátku publikace na následující den a konec publikace o rok později. 
+    Oba datumy lze změnit v "Moje články" nebo v seznamu článků u rubriky.  
+</p>
+</li>
+<li>
+<h3>Rubriky</h3>
+<p>
+    Lze procházet strukturu rubrik. <br/>
+    Seznam rubrik - kliknutím na název rubriky se zobrazí její podrubriky a články.<br/>
+    Seznam článků - seznam všech článků v rubrice (ne podrubrikách). S články lze provést stejné akce jako v "Moje články".<br/>
+    Vlastnosti - zde lze nastavit vlastnosti rubriky: nadřazená rubrika, název a url. Změnou nadřazené rubriky lze celou rubriku (včetně článků) přesunout. Dále je zde možné 
+    vytvořit novou podrubriku. Je nutné zvolit nadřazenou rubriku (jako výchozí je nastavená aktuální) a název rubriky. Pokud nebude vyplněno "Url", 
+    vytvoří se automaticky z názvu nové rubriky.<br/>
+    Menu - slouží k nastavení pevného menu rubriky. Do sloupce "Název" vyplňte název položky, do "Url" její adresu. Při vytváření odkazu na stránky České gymnastické federace 
+    zadat bez {$adresa} (např. místo {$adresa}/sportovni-gymnastika-muzi/ zadat pouze /sportovni-gymnastika-muzi/ ). 
+    Smazat položku z menu lze smazáním jejího názvu. Položky se na webu zobrazí ve stejném pořadí, v jakém jsou v tabulce.
+    Pokud uživatel nemá práva k rubrice, ale má práva min.4 k nějaké z nadřazených rubrik, může si na aktuální rubriku nastavit práva kliknutím 
+    na tlačítko "Převzít práva". Tím mu budou nastavena práva ve stejné výši, jako má na nejbližší nadřazenou rubriku, na kterou má práva. 
+</p>
+</li>
+<li>
+<h3>Práva</h3>
+<p>Je-li vybrána konkrétní rubrika, zobrazují se práva k této rubrice. Jinak se zobrazují práva k hlavní rubrice. 
+    Nejvyšší oprávnění znamená nejvyšší práva, nižší oprávnění znamená menší práva. V tabulce je uvedeno od které výše získáte jaké oprávnění. 
+    Doporučujeme přidávat vždy nejmenší možná práva.
+</p>
+</li>
+</ul>
+
+Práva se vždy týkají konkrétní rubriky, nezvtahují se na její podrubriky.<br/>
+<h4>Tabulka oprávnění:</h4>
+<table>
+    <tr><th>9</th><td>(nejvyšší práva)</td></tr>
+    <tr><th>8</th><td>-</td></tr>
+    <tr><th>7</th><td>-</td></tr>
+    <tr><th>6</th><td>-</td></tr>
+    <tr><th>5</th><td>-</td></tr>
+    <tr><th>4</th><td>nastavení top článku, úprava vlastností rubriky, přidávání podrubrik, převzetí práv k podrubrikám, přidávání dalších uživatelů</td></tr>
+    <tr><th>3</th><td>úprava všech článků, mazání všech článků, publikace (schvalování) všech článků, nastavení všech článků na hlavní stranu</td></tr>
+    <tr><th>2</th><td>publikace vlastního článku, nastavit článek na hlavní stranu</td></tr>
+    <tr><th>1</th><td>pasivní prohlížení všech rubrik a článků, vytvoření nového článku, editace vlastního článku, smazání vlastního článku</td></tr>
+</table>
+<h2>Přílohy</h2>
+Kliknutím na ikonu svorky v "Moje články" nebo v seznamu článků rubriky se dostanete na seznam příloh k danému článku. 
+Zde lze (v závislosti na výši práv) přidávat nové přílohy, mazat je, nastavit hlavní obrázek článku a jeden nebo více obrázků na hlavní stránku.
+<ul>
+    <li>Nahrávání příloh - Podle používaného prohlížeče se zobrazí jeden z formulářů:
+        <ul>
+            <li>a) Pokud prohlížeč podporuje nahrávání více souborů najednou, po kliknutí na tlačítko "přidat soubory" zvolte požadované soubory 
+                (pro vybrání více souborů lze použít klávesu Ctrl nebo Shift). Po vybrání souborů klikněte na tlačítko "spustit nahrávání". </li>
+            <li>b) Pokud prohlížeč nepodporuje nahrávání více souborů najednou, vyberte postupně soubory a klikněte na tlačítko "Uložit soubory".</li>
+        </ul>
+        Nahrané soubory se zobrazí v seznamu nahraných příloh pod formulářem
+    </li>
+    <li>
+        Nahrané přílohy - v seznamu se zobrazuje náhled a název souboru. Lze zvolit ikonu článku (vždy pouze jedna, 
+        označením obrázku se zruší označení u původního obrázku). Dále je možné vybrat jeden nebo více obrázků, které se u článku zobrazí na hlavní straně, 
+        bude-li článek vybrán jako top. 
+    </li>
+</ul>

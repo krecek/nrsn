@@ -1,0 +1,5 @@
+{extends 'base.latte'}
+{block sekce}Vlastnosti článku  - {$clanek['nadpis']}{/block}
+{block obsah}
+{control vlastnostiClankuForm}
+url: <a n:href=":Web:Clanky:default $clanek['url']">{link :Web:Clanky:default $clanek['url']}</a>

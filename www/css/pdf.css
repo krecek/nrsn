@@ -1,0 +1,43 @@
+body{
+    font-family:arial;
+    font-size: 14;
+}
+h1{
+    text-align:right;
+    margin:0px;
+}
+h2{
+    font-weight:normal;
+    font-size:23px;
+}
+
+div p span{
+    font-weight:bold;
+}
+table{
+    width:100%;
+}
+th{
+    text-align:left;
+}
+h3{
+    text-align:right;
+    margin-top:50px;
+}
+
+/*#logo_img{
+    height: 80;
+}*/
+
+
+#zahlavi{
+    text-align:right; 
+}
+
+.right {text-align:right;}
+.vypis {border-collapse: collapse; border: none;}
+.vypis tr th {background-color: grey; font-weight: normal; border-color: grey;}
+
+
+
+

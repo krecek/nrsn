@@ -1,0 +1,72 @@
+{block content}
+{control drobeckovaNavigace}
+{block title}<h1 class="oddelit">{$osoba['jmeno']} {$osoba['prijmeni']}</h1>{/block}
+<div class='osoba_hlavicka' style='float:left'>
+    
+    <table>
+            <tr><th class='left'>Ročník:</th><td>{$osoba['narozeni']|date:'Y'}</td></tr>
+            <tr><th class='left'>Město:</th><td>{$osoba['obec']}</td></tr>
+            <tr><th class='left'>Trenér:</th><td>{$osoba['trener']}</td></tr>
+           {foreach $evidence as $ev}
+                {first}
+           <tr><th class='left'>Oddíl:</th><td>
+               {/first}
+         <a n:href="Adresar:oddil $ev['oddil']">{$ev['nazev']}</a> {if $ev['registrace']}({$ev['registrace']}){/if}{sep}<br/>{/sep}
+    {last}</td></tr>{/last}{/foreach}
+     </table>
+</div>
+<div style='float:right'><img  src='{$basePath}/{$fotografie}' align="right"></div>
+<div style='clear:both; float:none;'>
+{foreach $prihlasky as $prihlaska}
+    {first}
+        <div>
+            <h3>Přihlášky</h3>
+            <table>
+                <tr class='left'>
+                    <th>Datum</th>
+                    <th>Závod</th>
+                </tr>
+     {/first}
+                <tr>
+                    <td>{$prihlaska['od']|datumKonani:$prihlaska['do']}</td>
+                    <td><a n:href="Kalendar:detail $prihlaska['id']">{$prihlaska['nazev']}</a></td>
+                </tr>
+     {last}
+            </table>
+        </div> 
+     {/last}
+{/foreach}
+{foreach $vysledky as $vysledek}
+    {first}
+        <div>
+            <h3>Výsledky závodů</h3>
+            <table width="100%">
+                <tr class='left'>
+                    <th>Datum</th>
+                    <th>Závod</th>
+                    <th>Sport</th>
+                    <th>Kategorie</th>
+                    <th>Umístění</th>
+
+                </tr>
+     {/first} 
+                <tr>
+                    <td>{$vysledek['od']|datumKonani:$vysledek['do']}</td>
+                    <td><a n:href="Vysledky:detail $vysledek['akce'],$vysledek['kategorie']">{$vysledek['nazev']}</a></td>
+                    <td>{$vysledek['sport']}</td>
+                    <td>{$vysledek['nazev_kategorie']}</td>
+                    <td>{$vysledek['poradi']}.</td>
+                </tr>
+     {last}           
+            </table>
+        </div>
+     {/last}  
+{/foreach}
+<br>
+       {control galerie}
+        {control seznamPriloh}
+</div>
+{/block content}
+{block menu}
+{control menu}
+{/block}

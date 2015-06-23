@@ -1,0 +1,18 @@
+{foreach $clanky as $clanek}
+<div class="{$class} ">
+    <div class="box-6">
+     <div class="slideshow">
+     {foreach $clanek['nahledy'] as $adresa=>$soubor}
+        <a href="{plink Clanky: $clanek['id']}">
+            <img src="{$basePath}/{$adresa}" alt="nahled" >
+        </a>
+    {/foreach}
+     </div>  
+    </div>
+    <div class="box-6">
+    <span class="nadpis"><a href="{plink Clanky: $clanek['url']}">{$clanek['nadpis']}</a></span>
+    <div class="datum">{$clanek['zobrazit_od']|datumClanku}{if $clanek['upravil']} (upraveno {$clanek['upraveno']|datumClanku}){/if}</div>
+    <div class="perex">{if $clanek['perex'] && $clanek['perex']!=' '}{$clanek['perex']} ...{/if}</div>
+    </div><div style="clear:both;"></div>
+</div>
+{/foreach}

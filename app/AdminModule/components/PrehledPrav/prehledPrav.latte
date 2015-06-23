@@ -1,0 +1,22 @@
+<table>
+    <tr>
+        <th>Jméno</th>
+        <th>Uživatelské jméno</th>
+        <th>Oprávnění</th>
+        <th></th>
+    </tr>
+    {foreach $osoby as $osoba}
+    <tr class="radek">
+         <td>{$osoba['jmeno']} {$osoba['prijmeni']}</td>
+         <td>{$osoba['username']}&nbsp;</td>
+        <td>{$osoba['uroven']}</td>
+        <td>{if $osoba['uroven']< $pravo_uzivatele || $osoba['uroven']< $admin}
+              {if isset($id)}
+                <a href='{plink nastaveniPrav "osoba"=>"{$osoba['osoba']}", "id"=>"{$id}"}'>
+              {else}
+               <a href='{plink nastaveniPrav "osoba"=>"{$osoba['osoba']}"}'>
+              {/if}
+                   Upravit</a>{else}&nbsp;{/if}</td>
+    </tr>
+    {/foreach}
+</table>

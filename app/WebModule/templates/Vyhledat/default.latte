@@ -1,0 +1,44 @@
+{block content}
+{control drobeckovaNavigace}
+{block title}<h1 class="oddelit">Výsledky vyhledávání</h1>{/block}
+    {control seznamClanku}
+{foreach $akce as $ak}
+    {first}
+        <div>
+            <h2>Akce</h2>
+            <ul>
+    {/first}
+                <li><a n:href="Kalendar:detail $ak['id']">{$ak['nazev']} ({$ak['od']|datumKonani:$ak['do']})</a></li>
+    {last}
+            </ul>
+        </div>
+    {/last}
+{/foreach}
+{foreach $oddily as $oddil}
+      {first}
+        <div>
+            <h2>Oddíly</h2>
+            <ul>
+      {/first}
+                <li><a n:href="Adresar:oddil $oddil['id']">{$oddil['nazev']}</a></li> 
+      {last}
+            </ul>
+        </div> 
+      {/last}
+    {/foreach}
+{foreach $osoby as $osoba}
+    {first}
+        <div>
+            <h2>Osoby</h2>
+            <ul>
+    {/first}
+               <li><a n:href="Osoby:default $osoba['id']">{$osoba['jmeno']} {$osoba['prijmeni']}</a></li>
+    {last}
+            </ul>
+        </div>
+    {/last}
+{/foreach}
+{/block content}
+{block menu}
+{control menu}
+{/block}

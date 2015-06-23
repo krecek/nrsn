@@ -1,0 +1,21 @@
+{extends 'base.latte'}
+{block sekce}Práva - {$rubrika['nazev']}{/block}
+
+{block obsah}
+{control prehledPrav}
+{if $moznost_uprav}
+{control priraditPravaForm}
+{/if}
+{if isset($osoby)}
+<div>
+    Vyberte osobu:
+    <table>
+        {foreach $osoby as $osoba}
+        <tr>
+            <td><a n:href="nastaveniPrav 'osoba'=>$osoba['id']">{$osoba['prijmeni']} {$osoba['jmeno']}</a></td>
+            <td>{$osoba['narozeni']|date('Y')}</td>            
+        </tr>
+        {/foreach}
+    </table>
+</div>
+{/if}

@@ -1,0 +1,8 @@
+<div class='neprehlednete'>
+   <h3 class="oddelit">Další články</h3>
+    <ul>
+   {foreach $clanky as $clanek}
+     <li> <a href="{plink Clanky: $clanek['url']}">{$clanek['nadpis']}</a></li>
+    {/foreach}
+    </ul>
+</div>

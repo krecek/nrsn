@@ -1,0 +1,5 @@
+<ul>
+  {foreach $items as $item=>$odkaz}
+    <li {if $aktivni==$odkaz['odkaz']} class="aktivni" {/if} ><a href="{plink $odkaz['odkaz']}">{$item}</a> </li>
+ {/foreach}
+</ul>

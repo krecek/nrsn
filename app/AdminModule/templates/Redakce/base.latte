@@ -1,0 +1,13 @@
+{extends '../@layout.latte'}
+{block subtitle} - redakce{/block}
+{block content}
+{control bocniMenu}
+
+<div class="span9"><div class="inner">
+        {snippet flashMessages}
+        <div n:foreach="$flashes as $flash" class="flash {$flash->type}">{$flash->message}</div>
+        {/snippet}
+        <h1>{block #sekce}{/block}</h1>
+{block #obsah}{/block}
+    </div></div>
+{/block}

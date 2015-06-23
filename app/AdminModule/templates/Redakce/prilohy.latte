@@ -1,0 +1,117 @@
+{extends 'base.latte'}
+{block head}
+
+<script type="text/javascript">
+// Initialize the widget when the DOM is ready
+$(document).ready(function() {
+    // Setup html5 version
+    $("#uploader").pluploadQueue({
+        // General settings
+        runtimes : 'html5,flash,silverlight,html4',
+        url : '../../upload/{$clanek['id']}',
+         
+        chunk_size : '1mb',
+        rename : true,
+        dragdrop: true,
+         
+        filters : {
+            // Maximum file size
+            max_file_size : '20mb',
+            // Specify what files to browse for
+            mime_types: [
+                { title : "Image files", extensions : "jpg,gif,png"},
+                { title : "Zip files", extensions : "zip"},
+                { title : "Pdf files", extensions : "pdf"},
+                { title : "Excel files", extensions : "xls,xlsx,csv"},
+                { title : "Word files", extensions : "doc,docx"},
+                { title : "Text files", extensions : "txt"},
+                { title : "Movie files", extensions : "mov,avi"}
+            ]
+        },
+ 
+//        // Resize images on clientside if we can
+        resize: {
+            width : {$max_rozmery_obrazku['vyska']},
+            height : {$max_rozmery_obrazku['sirka']},
+            quality : 100,
+            crop: false // crop to exact dimensions
+        },
+                // Views to activate
+        views: {
+            list: true,
+            thumbs: true, // Show thumbs
+            active: 'thumbs'
+        },
+        multiple_queues: true,
+        prevent_duplicates: true,
+ 
+        flash_swf_url : '/js/plupload/Moxie.swf',
+        silverlight_xap_url : '/js/plupload/Moxie.xap'
+    });
+});
+</script>
+{/block}
+{block sekce}Přílohy - {$clanek['nadpis']}{/block}
+{block obsah}
+
+<!--<div id="filelist">Your browser doesn't have Flash, Silverlight or HTML5 support.</div>-->
+<div id="uploader">
+    <p>{control nahratSouboryForm}</p>
+</div>
+<br />
+{snippet seznamPriloh}
+<h3>Nahrané přílohy</h3>
+<table>
+    <tr>
+        <th>Náhled</th>
+        <th class="nazev_clanku">Název</th>
+        <th class="maly">Ikona</th>
+        <th class="maly">Top</th>
+        <th class="maly">&nbsp;</th>
+    </tr>
+{foreach $prilohy as $adresa=>$priloha}
+        <tr>
+            <td><a href="{$basePath}/{$adresa}"><img src="{$basePath}/{$priloha['nahled']}" alt="{$priloha['nazev']}"/></a></td>
+            <td class="left">{$priloha['nazev']}</td>
+            <td>
+                {if $priloha['je_obrazek']}
+                   {if $priloha['nazev']==$clanek['obr']}
+                    <a n:href="zrusitHlavniObr! $clanek['id']" class="ajax"><img src="{$basePath}/css/ico-ok.gif" alt="zrusit" title="zrusit"/></a>
+                   {else}
+                <a n:href="nastavitHlavniObr! $clanek['id'],$priloha['nazev']" class="ajax" ><img src="{$basePath}/css/ico-ok1.png" alt="nastavit" title="nastavit"/></a>
+                   {/if}
+                {else}&nbsp;
+                {/if}
+            </td>
+            <td>
+            {if $priloha['je_obrazek']}
+                {if $priloha['hlavni_strana']}
+                <a n:href="zrusitObrHlavniStrana! $clanek['id'],$priloha['nazev']" class="ajax" > <img src="{$basePath}/css/ico-foto.png" alt="zrušit" title="zrušit"/></a>
+                {else}
+                <a n:href="nastavitObrHlavniStrana! $clanek['id'],$priloha['nazev']" class="ajax" ><img src="{$basePath}/css/ico-foto1.png" alt="nastavit" title="nastavit"/></a>
+                {/if}
+            {else}&nbsp;
+            {/if}
+            </td>
+            <td>
+                <a n:href="deletePriloha! $clanek['id'],$priloha['nazev']" data-confirm="Opravdu smazat přílohu?" class="ajax">
+                    <img src="{$basePath}/css/ico-del.gif" alt="smazat prilohu" title="smazat prilohu" />
+                </a> 
+            </td>
+            
+        </tr>
+{/foreach}
+</table>
+{/snippet seznamPriloh}
+<div>
+    <br/>
+    <h3>Nastavení</h3>
+{control nastavitGaleriiForm}
+</div>
+
+
+
+
+
+</body>
+</html>

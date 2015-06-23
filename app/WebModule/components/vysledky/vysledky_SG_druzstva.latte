@@ -1,0 +1,62 @@
+<div class="vysledky">
+{if $vysledky}
+{foreach $vysledky as $druzstvo}
+    {first}
+    <table class="tablesorter">
+        <thead>
+        <tr>
+            <th>&nbsp;</th>
+            <th colspan="3">Družstvo</th>
+          {foreach $naradi as $nar=>$preklad_naradi}
+            <th colspan="4">{$preklad_naradi}</th>
+          {/foreach}  
+            <th>Celkem</th>
+        </tr>
+        </thead>
+    {/first}
+        <tbody>
+        <tr class="zahlavi">
+            <th>{$druzstvo['poradi']|xml}</th>
+            <th colspan="3">{$druzstvo['nazev_druzstva']|xml}</th>
+            {foreach $naradi as $nar=>$preklad_naradi}
+            <th>D</th>
+            <th>E</th>
+            <th>pen</th>
+            <th>{$preklad_naradi}</th>
+          {/foreach}
+            <th>Celkem</th>
+        </tr>
+        {foreach $druzstvo['osoba'] as $vysledek}
+            <tr>
+                <td>&nbsp;</td>
+                <td>{if $vysledek['id']}<a href="{plink Osoby: $vysledek['id']}">{$vysledek['prijmeni']|xml} {$vysledek['jmeno']|xml}</a>
+                    {else}{$vysledek['prijmeni']|xml} {$vysledek['jmeno']|xml}
+                    {/if}
+                </td>
+                <td>{$vysledek['rocnik']|xml}</td>
+                <td>{if $vysledek['oddil']}<a href="{plink Adresar:oddil $vysledek['oddil']|xml}">{$vysledek['nazev_oddilu']|xml}</a>
+                    {else}{$vysledek['nazev_oddilu']|xml}
+                    {/if}
+                </td>
+                {foreach $naradi as $nar=>$preklad_naradi}
+                <td>{$vysledek[$nar]['d']|number:3}</td>
+                <td>{$vysledek[$nar]['e']|number:3}</td>
+                <td>{$vysledek[$nar]['p']|number:3}</td>
+                <td>{$vysledek[$nar]['body']|number:3}</td>
+                {/foreach}
+                <td><b>{$vysledek['body']|number:3}</b></td>
+            </tr>
+        {/foreach}
+            <tr>
+                <td>&nbsp;</td>
+                <td colspan="3"><b>celkem</b></td>
+                {foreach $naradi as $nar=>$preklad_naradi}
+                    <td colspan="4"><b>{$druzstvo[$nar."_body"]|number:3}</b></td>
+                {/foreach}
+                    <td><b>{$druzstvo['body']|number:3}</b></td>    
+            </tr>
+    {last}</tbody></table>{/last}
+{/foreach}
+{else}Pro tuto kategorii nejsou výsledky k dispozici.
+{/if}
+</div>

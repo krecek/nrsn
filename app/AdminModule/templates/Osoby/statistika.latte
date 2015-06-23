@@ -1,0 +1,79 @@
+{extends 'base.latte'}
+{block sekce}Statistika{/block}
+{block obsah}
+<div>
+    <table>
+        <tr>
+            <td>Počet osob:</td>
+            <td class="right">{$pocet_osob['osoby']}</td>
+        </tr>
+        <tr>
+            <td>Počet osob evidovaných v tomto roce:</td>
+            <td class="right">{$pocet_osob['evidence']}</td>
+        </tr>
+        <tr>
+            <td>Počet osob registrovaných v tomto roce:</td>
+            <td class="right">{$pocet_osob['registrace']}</td>
+        </tr>
+    </table>
+</div>
+<br/>
+<div>
+    <table>
+        <tr>
+            <th>Kraj</th>
+            <th>Počet evidovaných osob</th>
+            <th>Počet registrovaných osob</th>
+        </tr>
+        {foreach $kraje as $nazev=>$kraj}
+        <tr class="radek">
+        <td>{$nazev}</td>
+        <td class="right">{$kraj['evidence']}</td>
+        <td class="right">{$kraj['registrace']}</td>
+        </tr>
+        {/foreach}
+    </table>
+</div>
+<br/>
+<div>
+    <table>
+        <tr>
+            <th>Sport</th>
+            <th>Počet registrovaných osob</th>
+        </tr>
+        {dump $sporty}
+        {foreach $sporty as $sport}
+        <tr class="radek">
+            <td>{$sport['sport']}</td>
+            <td class="right">{$sport['pocet']}</td>
+        </tr>
+{/foreach}
+    </table>
+</div>
+<br>
+<div>
+    <table class="vel20">
+        <tr>
+            <th></th>
+            <th colspan="2">Evidence</th>
+            <th colspan="2">Registrace</th>
+        </tr>
+        <tr>
+            <th></th>
+            <th>Muži</th>
+            <th>Ženy</th>
+            <th>Muži</th>
+            <th>Ženy</th>
+        </tr>
+        {foreach $osoby_vek as $skupina}
+        <tr class="radek">
+        <td >{$skupina['nazev']}</td>
+        <td class="right">{$skupina['evidence']['M']}</td>
+        <td class="right">{$skupina['evidence']['Z']}</td>
+        <td class="right">{$skupina['registrace']['M']}</td>
+        <td class="right">{$skupina['registrace']['Z']}</td>
+        </tr>
+        {/foreach}
+    </table>
+ </div>
+

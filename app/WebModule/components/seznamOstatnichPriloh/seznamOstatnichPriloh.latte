@@ -1,0 +1,10 @@
+{if $prilohy}
+<h3>Ke stažení:</h3>
+<div class="prilohy">
+    <ul>
+{foreach $prilohy as $adresa=>$priloha}
+        <li><img src="{$basePath}/{$priloha['nahled']}" alt="" title="zobrazit"/> <a href="{$basePath}/{$adresa}">{$priloha['nazev']}</a></li>
+{/foreach}
+    </ul>
+</div>
+{/if}

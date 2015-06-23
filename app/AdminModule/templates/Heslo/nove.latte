@@ -1,0 +1,19 @@
+{var $robots = noindex}
+{block subtitle} - Zapomenuté heslo{/block}
+{block #content}
+<div id="prihlasovani">
+    <h1>Potvrdit vygenerování hesla</h1>
+{form potvrditZmenuHeslaForm}
+    {input id_osoby}
+    {input klic}
+    <table class="center">
+        <tr>
+            <td>Vygenerovat nové heslo?</td> 
+        </tr>
+        <tr>
+            <td>{input send}</td>
+        </tr>
+    </table>
+
+{/form}
+</div>

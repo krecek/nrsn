@@ -1,0 +1,90 @@
+{extends 'base.latte'}
+{block sekce}Nová osoba - potvrzení{/block}
+{block obsah}
+<div>
+V databázi byly nalezeny osoby se shodným jménem, příjmením a dnem narození:
+{foreach $nalezene_osoby as $osoba}
+<table>
+    <tr>
+        <th>Evidenční číslo:</th>
+          <td>{$osoba['id']}</td>
+    </tr>
+    <tr>
+        <th>Jméno: </th>
+        <td>{$osoba['jmeno']} {$osoba['prijmeni']}</td>
+    </tr>
+    <tr>
+        <th>Narození: </th>
+        <td>{date('j.n.Y',strtotime($osoba['narozeni']))}</td>
+    </tr>
+    {if $osoba['rc']}
+    <tr>
+        <th>Rodné číslo: </th>
+        <td>{$osoba['rc']|rodneCislo}&nbsp;</td>
+    </tr>
+    {/if}
+    {if $osoba['email']}
+    <tr>
+        <th>Email: </th>
+        <td>{$osoba['email']}</td>
+    </tr>
+    {/if}
+    {if $osoba['obec']}
+    <tr>
+        <th>Obec: </th>
+        <td>{$osoba['obec']}</td>
+    </tr>
+    {/if}
+    {if $osoba['poznamka']}
+    <tr>
+        <th>Poznámka: </th>
+        <td>{$osoba['poznamka']}</td>
+    </tr>
+    {/if}
+</table>
+<br />
+{/foreach}
+Nová osoba:
+<table>
+     <tr>
+        <th>Jméno: </th>
+        <td>{$nova_osoba['jmeno']} {$nova_osoba['prijmeni']}</td>
+    </tr>
+    <tr>
+        <th>Narození: </th>
+        <td>{date('j.n.Y',strtotime($nova_osoba['narozeni']))}</td>
+    </tr>
+    {if $nova_osoba['rc']}
+    <tr>
+        <th>Rodné číslo: </th>
+        <td>{$nova_osoba['rc']|rodneCislo}&nbsp;</td>
+    </tr>
+    {/if}
+    {if $nova_osoba['email']}
+    <tr>
+        <th>Email: </th>
+        <td>{$nova_osoba['email']}</td>
+    </tr>
+    {/if}
+    {if $nova_osoba['obec']}
+    <tr>
+        <th>Obec: </th>
+        <td>{$nova_osoba['obec']}</td>
+    </tr>
+    {/if}
+    {if $nova_osoba['poznamka']}
+    <tr>
+        <th>Poznámka: </th>
+        <td>{$nova_osoba['poznamka']}</td>
+    </tr>
+    {/if}
+</table>
+<br />
+
+{form novaOsobaPotvrzeniForm}
+<table><tr><td>{input storno}</td><td>{input send}</td></tr></table>
+{/form}
+
+
+
+</div>

@@ -1,0 +1,63 @@
+{extends 'base.latte'}
+{block sekce}Historie{if $admin} - {$osoba['jmeno']} {$osoba['prijmeni']}{/if}{/block}
+{block obsah}
+
+        {foreach $evidence as $ev}
+            {first}
+    <div>
+        <h3>Evidence v oddílech:</h3>
+        <table>
+            <tr>
+                <th>Rok</th>
+                <th>Oddíl</th>
+                {if $opravneni['historie_delete']}
+                <th>&nbsp;</th>
+                {/if}
+            </tr>
+{/first}
+            <tr>
+                <td>{$ev['od']|date:"Y"}</td>
+                <td>{$ev['nazev']}</td>
+                {if $opravneni['historie_delete']}
+                <td>{if in_array($ev['id_evidence'], $lze_smazat_evidence)}<a n:href="historieDelete $osoba['id'], $ev['id_evidence'], 'E'" onclick="return confirm('Opravdu smazat evidenci?')"><img src="{$basePath}/css/ico-del.gif" alt="zrušit evidenci" title="zrušit evidenci"/></a>{else}&nbsp;{/if}</td>
+                {/if}
+            </tr>
+            {last}
+        </table>
+    </div>
+{/last}
+        {/foreach}
+
+{foreach $registrace as $reg}
+{dump $reg}
+     {first}
+    <div><br/>
+        <h3>Registrace v oddílech:</h3>
+        <table>
+            <tr>
+                <th>Datum</th>
+                <th>Oddíl</th>
+                <th>Sport</th>
+                {if $opravneni['historie_delete']}
+                <th>&nbsp;</th>
+                {/if}
+            </tr>
+     {/first}
+            <tr>
+                <td>{$reg['od']|date:'j.n.Y'} - {$reg['do']|date:'j.n.Y'}</td>
+                <td>{$reg['nazev']}</td>
+                <td>{$sporty[$reg['sport']]['sport']} {if $reg['funkce']!='Z'}{$reg['funkce']}{/if}</td>
+                {if $opravneni['historie_delete']}
+                <td>{if in_array($reg['id_registrace'], $lze_smazat_registrace)}<a n:href="historieDelete $osoba['id'], $reg['id_registrace'], 'R'" onclick="return confirm('Opravdu smazat registraci?')"><img src="{$basePath}/css/ico-del.gif" alt="zrušit registraci" title="zrušit registraci"/></a>{else}&nbsp;{/if}</td>
+                 {/if}
+           </tr>
+     {last}
+        </table>
+    </div>
+     {/last}
+  {/foreach}
+{if $admin}
+<div class="bottom_nav">
+         <a n:href="prehled $osoba['id']">zpět na osobu</a>
+</div>
+{/if}

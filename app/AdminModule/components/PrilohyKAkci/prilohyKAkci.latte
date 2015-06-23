@@ -1,0 +1,22 @@
+{if $seznam_priloh}
+<div class="seznam_priloh">
+<h3>Přílohy</h3>
+<table>
+{foreach $seznam_priloh as $typ=>$prilohy}
+    <tr>
+        <th>{$typy_priloh[$typ]}</th>
+        <td>
+        {foreach $prilohy as $adresa=>$priloha}
+            {first}<ul>{/first}
+                <li> {if $priloha['je_obrazek']}<img src="{$basePath}/css/ico-foto.png" title="zobrazit"/>{else}<img src="{$basePath}/{$priloha['nahled']}" alt="" title="zobrazit"/>{/if} <a href="{$basePath}/{$adresa}">{$priloha['nazev']}</a></li>
+                {last}</ul>{/last}
+        {/foreach}
+        </td>
+    </tr>
+{/foreach}
+</table>
+</div>
+{/if}
+{if $zobrazit_galerii}
+{control galerie}
+{/if}

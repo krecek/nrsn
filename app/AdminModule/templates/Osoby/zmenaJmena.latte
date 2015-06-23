@@ -1,0 +1,12 @@
+{extends 'base.latte'}
+{block sekce}Změna uživatelského jména{/block}
+{block obsah}
+
+<div>
+{control zmenaUzivatelskehoJmenaForm}
+</div>
+{if $admin}
+<div class="bottom_nav">
+         <a n:href="prehled $user->getIdentity()->id">zpět na osobu</a>
+</div>
+{/if}

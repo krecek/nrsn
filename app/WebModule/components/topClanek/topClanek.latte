@@ -1,0 +1,8 @@
+<div class="topclanek">
+    <a href="{plink Clanky: $clanek['url']}">
+    {foreach $clanek['nahledy'] as $adresa=>$soubor}
+    <div class="box-6"><img src="{$basePath}/{$adresa}" alt="nahled"></div>
+    {/foreach}
+    <div class="box-6"><div class="perex">{$clanek['perex']}</div></div>
+    </a>
+</div>

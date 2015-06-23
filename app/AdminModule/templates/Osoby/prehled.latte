@@ -1,0 +1,79 @@
+{extends 'base.latte'}
+{block sekce}Osobní údaje{if $admin} - {$osoba['jmeno']} {$osoba['prijmeni']}{/if}{/block}
+{block obsah}
+<div>
+    <div>
+        <table>
+            <tr>
+                <td>Jméno:</td>
+                <td>{if $osoba['titul']}{$osoba['titul']} {/if}{$osoba['jmeno']} {$osoba['prijmeni']}</td>
+            </tr>  
+            {if $osoba['rodne_prijmeni']}
+            <tr>
+                <td>Rodné příjmení</td>
+                <td>{$osoba['rodne_prijmeni']}</td>
+            </tr>
+            {/if}
+ 
+            <tr>
+                <td>Evidenční číslo:</td>
+                <td>{$osoba['id']}</td>
+            </tr>  
+            <tr>
+                <td>Rodné číslo:</td>
+                <td>{$osoba['rc']|rodneCislo}&nbsp;</td>
+            </tr>  
+            <tr>
+                <td>Datum narození:</td>
+                <td>{if $osoba['narozeni']->format('Y')!=-0001}
+{$osoba['narozeni']|date: "j.n.Y"}{else}&nbsp;{/if}</td>
+            </tr>
+            <tr>
+                <td>Adresa:</td>
+                <td>{$osoba['ulice']}{if $osoba['ulice']},{/if} {$osoba['obec']}{if $osoba['obec']},{/if} {$osoba['psc']}&nbsp;</td>
+            </tr>
+            <tr>
+                <td>Telefon:</td>
+                <td>{$osoba['mobil']}{if $osoba['mobil']&&$osoba['telefon']}, {/if} {$osoba['telefon']}&nbsp;</td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td>{$osoba['email']}&nbsp;</td>
+            </tr>
+            <tr>
+                <td>Web:</td>
+                <td>{$osoba['web']}&nbsp;</td>
+            </tr>
+            <tr>
+                <td>Poznámka:</td>
+                <td>{$osoba['poznamka']}&nbsp;</td>
+            </tr>
+            {if $osoba['trener']}
+            <tr>
+                <td>Trenér:</td>
+                <td>{$osoba['trener']}&nbsp;</td>
+            </tr>
+            {/if}
+        </table>
+    </div>
+   
+    {if $admin}
+<div class="bottom_nav">
+        {if $opravneni['edit']}<a n:href="Osoby:edit $osoba['id']">upravit</a>{/if}
+        {if $opravneni['zmena_hesla']}
+        <a n:href="zmenaHesla $osoba['id']">změna hesla</a>
+        <a n:href="zmenaJmena $osoba['id']">změna jména</a>
+        {/if}
+        {if $opravneni['pristupove_udaje']}<a n:href="Osoby:zmenaPristupovychUdaju $osoba['id']">změna přístupových údajů</a>{/if}
+        {if $opravneni['view']}<a n:href="Osoby:historie $osoba['id']">historie</a>{/if}
+        {if $opravneni['prestup']}<a n:href="Osoby:prestup $osoba['id']">přestup</a>{/if}
+        {if $opravneni['delete']}
+            {if $osoba['platne']=='A'}
+                <a  onclick="if (!confirm('Opravdu smazat osobu?')) return false;" n:href="Osoby:delete $osoba['id']">smazat</a>
+            {elseif $osoba['platne']=='N'}
+                <a  onclick="if (!confirm('Opravdu obnovit osobu?')) return false;" n:href="Osoby:obnovit $osoba['id']">obnovit</a>
+            {/if}
+        {/if}
+</div>
+    {/if}
+</div>

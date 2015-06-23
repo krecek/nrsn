@@ -1,0 +1,22 @@
+.nav li a, .bottom_nav a  {display:block; line-height:3em; background: rgb(29,45,132);}
+.bgline {height:4.5em; border-bottom:1px solid silver; top:-0.8em}
+.bgline .cl {clear:both; background-color:white;}
+.hlmenu li { display: inline; width: 10em;}
+.hlmenu li a { background: red;
+    border: 1px solid silver;
+    color: #FFFFFF;
+    display: block;
+    width: 6em;
+    font-size: 1.5em;
+    line-height: 3;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    top: 1px;
+    z-index: 999;
+}
+.hlmenu li.aktivni a {background: #ffffff;border-bottom-color: white; color:red;font-weight: bold; text-shadow: 1px 1px 0 #c0c0c0; box-shadow: 0 -5px 5px 0 #E0E0E0; filter: none;} 
+a.home span {cursor:pointer;}
+a.top, a.dolu {diplay:block;}
+#container {background-position: 0 -84px;}

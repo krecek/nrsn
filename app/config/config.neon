@@ -1,0 +1,75 @@
+#
+# SECURITY WARNING: it is CRITICAL that this file & directory are NOT accessible directly via a web browser!
+#
+# If you don't protect this directory from direct web access, anybody will be able to see your passwords.
+# http://nette.org/security-warning
+#
+common:
+	parameters:
+		mail:
+			from: 'robot@gymfed.cz'
+			reply_to: 'gis@gymfed.cz'
+		debug:
+			compatibility: yes
+		logger:
+			file: '../log/gis.log'
+			ident: auto
+			date: auto
+			conv: auto
+	php:
+		date.timezone: Europe/Prague
+		# zlib.output_compression: yes
+
+	nette:
+		application:
+			errorPresenter: Error
+
+		session:
+			expiration: 14 days
+
+
+	services:
+		authenticator: Authenticator
+		logger: Logger(%logger.file%)
+		osobyRepository: OsobyRepository
+		prava: Opravneni
+		clankyRepository: ClankyRepository
+		rubrikyRepository: RubrikyRepository
+		menuRepository: MenuRepository
+		redakce: Redakce
+		prilohy: Prilohy
+		# akce: Akce
+		odeslaniMailu: 
+			class: OdeslaniMailu(%mail.from%,'jana@satoya.cz',%mail.reply_to%)
+			setup: 
+				- setDebugMode(%debugMode%)
+
+	factories:
+
+
+production < common:
+	nette:
+		database:
+			dsn: 'mysql:host=sql.satoya.cz;dbname=gymfed'
+			user: gymfed
+			password: PxPSXn2G7dB5bCwZ
+			codepage: utf8
+			charset: utf8
+	parameters:
+		prihlasovaci_stranka: 'https://gis.gymfed.cz/login/'
+		adresa: 'gis.gymfed.cz'
+
+development < common:
+	nette:
+		database:
+			dsn: 'mysql:host=localhost;dbname=rs'
+			user: root
+			password: 
+			codepage: utf8
+			charset: utf8
+	parameters:
+		prihlasovaci_stranka: 'https://gis.drino.net/login/'
+		adresa: 'gis.drino.net'
+		mail:
+			subj: 'development mode'
+

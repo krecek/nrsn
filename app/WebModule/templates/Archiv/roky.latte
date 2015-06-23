@@ -1,0 +1,14 @@
+{block content}
+{control drobeckovaNavigace}
+{block title}<h1 class="oddelit">Archiv článků</h1>{/block}
+<ul>
+{foreach $roky as $rok}
+    <li><a n:href="Archiv:default $rok">Archiv článků {$rok}</a></li>
+{/foreach}
+</ul>
+Zvolte rok, ve kterém byl článek vydán.
+
+{/block content}
+{block menu}
+{control menu}
+{/block}

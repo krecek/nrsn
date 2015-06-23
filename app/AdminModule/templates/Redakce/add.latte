@@ -1,0 +1,29 @@
+{extends 'base.latte'}
+{block head}
+        <script src="{$basePath}/js/tiny_mce/konfigurace.js"></script>
+        <script src="{$basePath}/js/tiny_mce/plugins/tinybrowser/tb_tinymce.js.php"></script>
+{/block}  
+{block sekce}Nový článek{/block}
+{block obsah}
+{form novyClanekForm}
+    <ul class="errors" n:if="$form->hasErrors()">
+            <li n:foreach="$form->errors as $error">{$error}</li>
+    </ul>
+    <table width="100%">
+        <tr class="required">
+            <td>{input rubrika}</td>
+        </tr>
+        <tr class="required">
+            <td>{input nadpis}</td>
+        </tr>
+        <tr>
+            <td>{input perex}</td>
+        </tr>
+        <tr>
+            <td>{input obsah}</td>
+        </tr>
+        <tr>
+            <td>{input send}</td>
+        </tr>
+    </table>
+{/form}

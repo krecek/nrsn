@@ -1,0 +1,31 @@
+{extends 'base.latte'}
+{block sekce}Nová osoba{/block}
+{block obsah}
+
+
+{if isset($podobne_osoby)}
+<div class="flash error">
+    
+Narozeni ve stejný den:
+<ul>
+ {foreach $podobne_osoby['narozeni'] as $podobna_osoba}
+    <li>
+<a n:href="prehled $podobna_osoba['id']">{$podobna_osoba['jmeno']} {$podobna_osoba['prijmeni']}</a> {$podobna_osoba['narozeni']|date:'j.n.Y'}, {$podobna_osoba['rc']|rodneCislo}, {$podobna_osoba['email']},{$podobna_osoba['obec']}, {$podobna_osoba['poznamka']}
+    </li>
+{/foreach}
+</ul>
+</div>
+<div class="flash error">
+Se stejným jménem:
+<ul>
+{foreach $podobne_osoby['jmeno'] as $podobna_osoba}
+    <li>
+       <a n:href="prehled $podobna_osoba['id']">{$podobna_osoba['jmeno']} {$podobna_osoba['prijmeni']}</a>  {$podobna_osoba['narozeni']|date:'j.n.Y'}, {$podobna_osoba['rc']|rodneCislo}, {$podobna_osoba['email']}, {$podobna_osoba['obec']}, {$podobna_osoba['poznamka']}
+    </li>
+        
+{/foreach}
+</ul>
+</div>
+{/if}
+
+{control addOsobaForm}

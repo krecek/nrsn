@@ -1,0 +1,169 @@
+{extends 'base.latte'}
+{block sekce}Rubriky - {$rubrika['nazev']}{/block}
+{block obsah}
+{if $rubrika['rodic']==$id_hlavni_skupiny || $rubrika['id']==$id_hlavni_skupiny}
+    <h3>Seznam rubrik</h3>
+    <table>
+        <tr>
+            <th>název</th>
+            {if $opravneni['rubrika_edit']}
+            <th>&nbsp;</th>
+            {/if}
+        </tr>
+        {if !count($rubriky)}
+            <tr><td colspan="5">Nebyly nalezeny žádné rubriky</td></tr>
+        {else}
+           {foreach $rubriky as $podrubrika}
+            <tr class="radek">
+                <td>
+                    <a n:href="rubriky $podrubrika['id']">{$podrubrika['nazev']}</a>
+                </td>
+                {if $opravneni['rubrika_edit']}
+                <td{if $podrubrika['zamek']=='A'} title='Rubrika je chráněna proti smazání'{/if}{if $podrubrika['podrubriky']} title="Rubrika obsahuje podrubriky"{/if}>
+                    {if $podrubrika['zamek']=='N'  && !$podrubrika['podrubriky']}
+                     <a n:href="deleteRubrika $podrubrika['id']" onclick="if (!confirm('Opravdu smazat rubriku?')) return false;"><img src="{$basePath}/css/ico-del.gif" alt="smazat" title="smazat"/></a>
+                     {else}&nbsp;
+                     {/if}
+                </td>
+                {/if}
+            </tr>
+            {if $podrubrika['podrubriky']}
+            {foreach $podrubrika['podrubriky'] as $podrubr}
+            <tr class="radek">
+                <td>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<a n:href="rubriky $podrubr['id']">{$podrubr['nazev']}</a>
+                </td>
+                {if $podrubrika['rubrika_edit']}
+                    <td{if $podrubr['zamek']=='A'} title='Rubrika je chráněna proti smazání'{/if}>
+                       {if $podrubr['zamek']=='N'}
+                         <a n:href="deleteRubrika $podrubr['id']" onclick="if (!confirm('Opravdu smazat rubriku?')) return false;"><img src="{$basePath}/css/ico-del.gif" alt="smazat" title="smazat"/></a>
+                       {else}&nbsp;
+                       {/if}
+                    </td>
+                {else}
+                    <td title='Nemáte oprávnění smazat tuto rubriku'>&nbsp;</td>
+                {/if}
+                
+             </tr>
+            {/foreach}
+            {/if}
+           {/foreach}
+        {/if}
+    </table>
+{/if}
+{if $rubrika['rodic']==$id_hlavni_skupiny && $rubrika['id']!=$id_hlavni_skupiny}<br/>{/if}
+{if $rubrika['id']!=$id_hlavni_skupiny}  
+   {snippet seznamClanku}
+    <h3>Seznam článků</h3>
+    <table>
+        <tr>
+        <th class="nazev_clanku">Nadpis</th>
+        <th class="oddo">Od</th>
+        <th class="oddo">Do</th>
+        <th class="maly"><acronym title="Zobrazit na hlavní stránce"></acronym></th>
+        <th class="maly">Top</th>
+        <th class="maly">&nbsp;</th>
+        <th class="maly">&nbsp;</th>
+        </tr> 
+
+     {if !count($clanky)}
+        <tr>
+            <td colspan="8">Nebyly nalezeny žádné články</td>
+        </tr>
+     {else}
+        {foreach $clanky as $clanek}
+        <tr class="radek{if $clanek['zobrazit_od']->getTimestamp()>time()} nepublikovano{/if}">
+            <td class="left"><a n:href="editClanek $clanek['id'], $backlink" title="{$clanek['nadpis']}">{$clanek['nadpis']}</a></td>
+            <td>
+                {if $clanek['prava']['publikovat']}
+                    <a n:href="nastavitZacatek $clanek['id'], $backlink">
+                      {if $clanek['zobrazit_od']->getTimeStamp()==$zobrazit_od_neschvaleneho_clanku->getTimeStamp()}
+                        Schválit
+                      {else}
+                         {$clanek['zobrazit_od']|date:'j.n.Y'}
+                      {/if}
+                     </a>
+                {else}
+                    {if $clanek['zobrazit_od']->getTimeStamp()==$zobrazit_od_neschvaleneho_clanku->getTimeStamp()}
+                      Neschváleno
+                   {else}
+                      {$clanek['zobrazit_od']|date:'j.n.Y'}
+                   {/if}
+                {/if}
+            </td>
+            <td>
+                {if $clanek['prava']['edit']}
+                    <a n:href="nastavitKonec $clanek['id'], $backlink">{$clanek['zobrazit_do']|date:'j.n.Y'}</a>
+                {else}
+                    {$clanek['zobrazit_do']|date:'j.n.Y'}
+                {/if}
+            </td>
+            <td> 
+                {if $clanek['hlavni_strana']}
+                    {if $clanek['prava']['publikovat']}
+                        <a n:href="nastavitHlavniStranu! $clanek['id'],0" class="ajax">
+                           <img src="{$basePath}/css/ico-ok.gif" alt="zrušit" title="zrušit zobrazení na hlavní straně"/>
+                        </a>
+                     {else}
+                        <img src="{$basePath}/css/ico-ok.gif" alt="ano" title="zobrazuje se na hlavní straně"/>
+                     {/if}
+                {else}
+                     {if $clanek['prava']['publikovat']}
+                        <a n:href="nastavitHlavniStranu! $clanek['id'],1"  class="ajax">
+                          <img src="{$basePath}/css/ico-ok1.png" alt="nastavit" title="nastavit zobrazení na hlavní straně"/>
+                        </a>
+                      {else}
+                         <img src="{$basePath}/css/ico-ok1.png" alt="ne" title="nezobrazuje se na hlavní straně"/>
+                      {/if}
+                {/if}
+            </td>
+        <td>
+            {if $clanek['top']}
+                <img src="{$basePath}/css/ico-top.png" alt="top" title="top článek" style="box-shadow: 1px 1px 2px #C0C0C0;" />
+            {elseif $clanek['zobrazit_od']->getTimestamp()>time()}
+                <img src="{$basePath}/css/ico-top1.png" alt="článek není publikován" title="Nelze nastavit, článek není publikován." style="box-shadow: 1px 1px 2px #C0C0C0;"/>
+            {else}
+                {if $opravneni['nastavit_top']}
+                <a n:href="nastavitTopClanek! $clanek['id']"  class="ajax" onclick="if(!confirm('Opravdu nastavit jako top článek?'))return false;">
+                  <img src="{$basePath}/css/ico-top1.png" alt="nastavit" title="nastavit jako top článek" style="box-shadow: 1px 1px 2px #C0C0C0;" />
+                </a>
+                {else}
+                   <img src="{$basePath}/css/ico-top1.png" alt="není top" title="není top" style="box-shadow: 1px 1px 2px #C0C0C0;" />
+                {/if}
+            {/if}
+        </td>
+            <td>
+                {if $clanek['prava']['edit']}
+                    <a href="{plink Redakce:prilohy $clanek['id']}"><img src="{$basePath}/css/ico-priloha.png" alt="přílohy" title="přílohy"/></a></td>
+                {else}
+                    &nbsp;
+                {/if}
+            <td{if $clanek['zamek']=='A'} title='Článek je chráněn proti smazání'{/if}>
+                {if $clanek['prava']['edit'] && $clanek['zamek']=='N'}
+                    <a href="{plink Redakce:deleteClanek $clanek['id'], $backlink}" onclick="if (!confirm('Opravdu smazat článek?')) return false;">
+                        <img src="{$basePath}/css/ico-del.gif" alt="smazat článek" title="smazat článek"/>
+                    </a>
+                {else}&nbsp;
+                {/if}
+            </td>
+        </tr>
+        {/foreach}
+        {/if}
+    </table>
+    {/snippet}
+{/if}
+
+<div class="bottom_nav">
+ {if $opravneni['rubrika_edit']}
+         <a n:href="editRubrika $rubrika['id']">Vlastnosti</a>
+ {/if}
+ {if $opravneni['menu_edit']}
+         <a n:href="editMenu $rubrika['id']">Menu</a>
+ {/if}
+ {if $opravneni['prevzit_pravo']}
+        <a n:href="prevzitPrava $rubrika['id']">Převzít práva</a>
+ {/if}
+</div>
+
+
+

@@ -1,0 +1,21 @@
+{block head}     
+<script src="{$basePath}/js/cycle/jquery.cycle.all.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+ $(".ec-validDay").hover(
+        function() {
+            $(this).children('.ec-eventBox').show();
+        },
+        function() {
+            $(this).children('.ec-eventBox').hide();
+        }
+    );
+        
+});
+</script>
+{/block}
+
+{block content}
+
+{/block}
+{block calendar}{control kalendar}{/block}

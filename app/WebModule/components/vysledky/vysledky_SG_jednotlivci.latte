@@ -1,0 +1,55 @@
+<script>
+       $(function() {
+                $("table.tablesorter")
+                        .tablesorter( { widthFixed: true, widgets: ['zebra'] } );
+        });
+</script>
+<div class="vysledky">
+{if $vysledky}
+    {dump $vysledky}
+        <table cellspacing="1" class="tablesorter clickselect" >
+            <thead>
+                <tr>
+                    <th>&nbsp;</th>
+                    <th>Jméno</th>
+                    <th>Ročník</th>
+                    <th>Oddíl</th>
+                    <th>Trenér</th>
+               {foreach $naradi as $nar=>$preklad_naradi}
+                    <th>D</th>
+                    <th>E</th>
+                    <th>pen</th>
+                    <th>{$preklad_naradi}</th>
+          {/foreach} 
+                    <th>Celkem</th>
+                </tr>
+            </thead>
+            <tbody>
+        {foreach $vysledky as $vysledek}
+                <tr>
+                    <td>{$vysledek['poradi']|xml}.</td>
+                    <td>{if $vysledek['id']}<a href="{plink Osoby: $vysledek['id']}">{$vysledek['prijmeni']|xml} {$vysledek['jmeno']|xml}</a>
+                {else}{$vysledek['prijmeni']|xml} {$vysledek['jmeno']|xml} 
+                {/if}
+                    </td>
+                    <td>{$vysledek['rocnik']|xml}</td>
+                    <td>{if $vysledek['oddil']}<a href="{plink Adresar:oddil $vysledek['oddil']}">{$vysledek['nazev_oddilu']|xml}</a>
+                {else}{$vysledek['nazev_oddilu']|xml}
+                {/if}
+                    </td>
+                    <td>{if $vysledek['trener']}{$vysledek['trener']|xml}{/if}</td>
+            {foreach $naradi as $nar=>$preklad_naradi}
+                    <td>{$vysledek[$nar."_d"]|number:3}</td>
+                    <td>{$vysledek[$nar."_e"]|number:3}</td>
+                    <td>{$vysledek[$nar."_p"]|number:3}</td>
+                    <td><b>{$vysledek[$nar."_body"]|number:3}</b></td>
+            {/foreach}
+                    <td>{$vysledek['body']|number:3}</td>
+                </tr>
+        {/foreach}
+
+            </tbody>
+        </table>
+{else}Pro tuto kategorii nejsou výsledky k dispozici.
+{/if}
+    </div>

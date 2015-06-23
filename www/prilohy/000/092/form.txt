@@ -1,0 +1,155 @@
+<?php
+define ("LOGGER_IDENT","www");
+require "/etc/lms/lib/config.php";
+require "/etc/lms/lib/logger.php";
+require "/etc/lms/lib/auth.php";
+
+logg("OBJEDNAVKA v1.01");
+$value = $_POST['sluzba'];
+$x1= $value[0];
+$x2= $value[1];
+$x3= $value[2];
+$x4= " ";
+$v2 = "Zajemce o ";    
+$subj= $v2.$x1.$x4.$x2.$x4.$x3;
+$lastname= "$_POST[prijmeni]";
+$name= "$_POST[jmeno]";
+$email= "$_POST[email]";
+$address1= "$_POST[ulice]";
+$address2= "$_POST[cpco]";
+$address3= " ";
+$address= $address1.$address3.$address2;
+$zip= "$_POST[psc]";
+$city= "$_POST[mesto]";
+$phone= "$_POST[telefon]";
+$notes= "$_POST[poznamka]";
+$reference= "web";
+
+
+
+
+$id=0;
+do {
+   $id++;
+   $res=MySQL_Query("SELECT * FROM customers WHERE id=$id");
+   $n=MySQL_Num_Rows($res);
+   MySQL_Free_Result($res);
+   }
+while ($n>0);
+$createtime=time();
+$pin=rand(10000,99999);
+if ($address=='') $address='N/A';
+
+$res=MySQL_Query("INSERT INTO customers SET id='$id', lastname='$lastname', name='$name', status='3', email='$email', address='$address', zip='$zip', city='$city', creationdate=$createtime, moddate=$createtime, pin=$pin, notes='uzivatel zalozen z webu  ($_SERVER[REMOTE_ADDR])', deleted='0', divisionid=1, countryid=0");
+if (!$res) die("Vytvoreni uzivatele ID $id neprobehlo");
+$res=MySQL_Query("INSERT INTO customercontacts SET id=0, customerid=$id, name='mobil', phone='$phone'");
+if (!$res) die("Vytvoreni uzivatele ID $id neprobehlo");
+$res=MySQL_Query("INSERT INTO rttickets SET id=0, queueid=5, requestor='$name $lastname', subject='$subj', createtime=$createtime, customerid='$id'");
+if (!$res) die ("Vytvoreni ticketu neprobehlo");
+$ref=MySQL_Insert_Id();
+$res=MySQL_Query("INSERT INTO rtmessages SET id=0, ticketid=$ref, subject='$subj', body='$notes', createtime=$createtime, customerid='$id'");
+if (!$res) die("Vytvoreni zpravy neprobehlo");
+
+logg("vytvorena objednavka zakaznika $id");
+
+mail($email,"Pe3ny Net","Vase zadost byla korektne zaznamenana pod cislem #$ref\n\nPokud chcete sledovat stav sveho pozadavku elektronicky muzete tak ucinit na zakaznickem portalu http://zakaznik.pe3ny.net s ID $id a PIN $pin\n\nTechnicka podpora, tel.:222-741-222\nPe3ny Net","From: info@pe3ny.net");
+
+
+?>
+
+
+window.addEvent('domready',function(){
+
+
+$('input_submit_13').addEvent('click', function(e) {
+	
+var parametry = $('chronoform_skript7777').toQueryString();
+console.log(parametry);
+alert(parametry);			
+
+		});
+
+
+});
+
+
+
+
+
+
+
+
+window.addEvent('domready',function(){
+
+
+$('input_submit_13').addEvent('click', function(e) {
+	
+alert('T');			
+
+		});
+
+
+});
+
+
+
+/----------------------------
+
+window.addEvent('domready',function(){
+
+
+$('chronoform_skript7777').addEvent('submit', function(e) {
+var parametry = $('chronoform_skript7777').toQueryString();
+var myRequest = new Request({
+    url: 'http://cvf.drino.net/testform.php',
+    method: 'post',
+    onRequest: function(){
+
+    },
+    onSuccess: function(){
+        alert('hotovo')
+    },
+    onFailure: function(){
+        alert('neprobehlo');
+    }
+});
+myRequest.send(parametry);
+	
+
+console.log(parametry);
+alert(parametry);			
+
+		});
+
+
+});
+
+
+//------------------------
+window.addEvent('domready',function(){
+
+
+$('chronoform_skript7777').addEvent('submit', function(e)  {
+var parametry = $('chronoform_skript7777').toQueryString();
+var myRequest = new Request({
+    url: 'http://cvf.drino.net/testform.php',
+    data: {'parametry': parametry}, 
+    method: 'get',
+    onRequest: function(){
+
+    },
+    onSuccess: function(){
+        alert('hotovo')
+    },
+    onFailure: function(){
+        alert('neprobehlo');
+    }
+});
+myRequest.send(parametry);
+			
+
+		});
+
+
+});
+

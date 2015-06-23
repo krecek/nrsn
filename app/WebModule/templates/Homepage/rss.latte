@@ -1,0 +1,27 @@
+{contentType application/rss+xml; charset=utf-8}
+<<?php ?>?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>Česká gymnastická federace</title>
+        <link>{link //Homepage:default}</link>
+        <description>Česká gymnastická federace</description>
+        <language>cs</language>
+        <image>
+            <url>{$basePath}/images/cgf-logo_smallx.jpg</url>
+            <title>Česká gymnastická federace</title>
+            <link>{link //Homepage:default}</link>
+            <width>120</width>
+            <height>99</height>
+        </image>
+
+        {foreach $clanky as $clanek}
+        <item>
+            <title>{$clanek->nadpis}</title>
+            <link>{link //Clanky:default $clanek->url}</link>
+            <description>{$clanek->perex}</description>
+            <pubDate>{$clanek->zobrazit_od->format('r')}</pubDate>
+            <enclosure url="{link //Homepage:default}{$basePath}/{$clanek['nahled']}" length="{$clanek['nahled_velikost']}" type="{$clanek['nahled_type']}"/>
+        </item>
+        {/foreach}
+    </channel>
+</rss>

@@ -1,0 +1,30 @@
+<div class='seznam_akci'>
+   {foreach $seznam_akci as $akce}
+        {first}<h2 class="oddelit"><a href="{plink Kalendar:}">Akce</a></h2>{/first}
+        <div class="akce">
+            <div class="akce_zahlavi oddo">
+                {$akce['od']|datumKonani:$akce['do']}
+                <h3>{$akce['nazev']}</h3>
+            </div>
+            <div class="popis_akce hidden">
+                {foreach explode(', ',$akce->sport) as $zkr}{$sporty[$zkr]}{sep}, {/sep}{/foreach}<br>
+                {$akce->popis}
+               <a class='na_detail' href='{plink Kalendar:detail $akce['id']}'>více&nbsp;informací</a>
+               {if $akce['exisuji_vysledky']}<br><img src="/css/medaile.png"><a href="{plink Vysledky:detail $akce['id']}">elektronické výsledky</a>{/if}
+                {if $akce['prilohy']}
+                <ul>
+                    {foreach $akce['prilohy'] as $typ=>$seznam_priloh}
+                        {if count($seznam_priloh)==1}
+                    <li> <a href="{$basePath}/{$seznam_priloh[0]['adresa']}">{$typy_priloh[$typ]}</a></li>
+                        {else}
+                            {foreach $seznam_priloh as $poradi=>$priloha}
+                    <li>    <a href="{$basePath}/{$priloha['adresa']}">{$typy_priloh[$typ]} {$poradi+1}</a></li>
+                            {/foreach}
+                        {/if}
+                    {/foreach}
+                </ul>
+{/if}
+            </div>
+        </div>
+    {/foreach}
+</div>

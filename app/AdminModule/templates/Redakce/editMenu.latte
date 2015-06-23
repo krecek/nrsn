@@ -1,0 +1,19 @@
+{extends 'base.latte'}
+{block sekce}Upravit menu - {$rubrika['nazev']}{/block}
+{block obsah}
+{form upravitMenuForm}
+<table class="editMenu">
+    <tr>
+        <th class="center" >Název</th>
+        <th class="center">Url</th>
+    </tr>
+    {for $i=1;$i<=$form->pocet_polozek;$i++}
+    <tr>
+        <td>{input nazev_$i}{input poradi_$i}{input id_$i}</td>
+        <td>{input url_$i}</td>
+    </tr>
+    {/for}
+    <tr><td>&nbsp;</td><td>{input send}</td></tr>
+</table>
+{/form}
+<div class='bottom_nav'><a n:href="rubriky $rubrika['id']">Zpět na rubriku</a></div>

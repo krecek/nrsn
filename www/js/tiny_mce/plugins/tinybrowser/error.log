@@ -1,0 +1,429 @@
+2014-06-10 15:47:20 (CEST)	2 Warning	filemtime() [<a href='function.filemtime'>function.filemtime</a>]: stat failed for /home/svn/repos/gymfed/trunk/www/prilohy/000/064bf8a5235-b_1-tdm2014_plakat-001-452x640-.jpg	File: tinybrowser.php	Line: 108	
+2014-06-10 15:47:20 (CEST)	2 Warning	filesize() [<a href='function.filesize'>function.filesize</a>]: stat failed for /home/svn/repos/gymfed/trunk/www/prilohy/000/064bf8a5235-b_1-tdm2014_plakat-001-452x640-.jpg	File: tinybrowser.php	Line: 109	
+2014-06-10 15:47:20 (CEST)	2 Warning	getimagesize(/home/svn/repos/gymfed/trunk/www/prilohy/000/064bf8a5235-b_1-tdm2014_plakat-001-452x640-.jpg) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: No such file or directory	File: tinybrowser.php	Line: 112	
+2014-06-10 15:47:20 (CEST)	2 Warning	filemtime() [<a href='function.filemtime'>function.filemtime</a>]: stat failed for /home/svn/repos/gymfed/trunk/www/prilohy/000/064_tn_bf8a5235-b_1-tdm2014_plakat-001-452x640-.jpg	File: tinybrowser.php	Line: 108	
+2014-06-10 15:47:20 (CEST)	2 Warning	filesize() [<a href='function.filesize'>function.filesize</a>]: stat failed for /home/svn/repos/gymfed/trunk/www/prilohy/000/064_tn_bf8a5235-b_1-tdm2014_plakat-001-452x640-.jpg	File: tinybrowser.php	Line: 109	
+2014-06-10 15:47:20 (CEST)	2 Warning	getimagesize(/home/svn/repos/gymfed/trunk/www/prilohy/000/064_tn_bf8a5235-b_1-tdm2014_plakat-001-452x640-.jpg) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: No such file or directory	File: tinybrowser.php	Line: 112	
+2014-06-10 15:47:40 (CEST)	2 Warning	filemtime() [<a href='function.filemtime'>function.filemtime</a>]: stat failed for /home/svn/repos/gymfed/trunk/www/prilohy/000/064bf8a5235-b_1-tdm2014_plakat-001-452x640-.jpg	File: tinybrowser.php	Line: 108	
+2014-06-10 15:47:40 (CEST)	2 Warning	filesize() [<a href='function.filesize'>function.filesize</a>]: stat failed for /home/svn/repos/gymfed/trunk/www/prilohy/000/064bf8a5235-b_1-tdm2014_plakat-001-452x640-.jpg	File: tinybrowser.php	Line: 109	
+2014-06-10 15:47:40 (CEST)	2 Warning	getimagesize(/home/svn/repos/gymfed/trunk/www/prilohy/000/064bf8a5235-b_1-tdm2014_plakat-001-452x640-.jpg) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: No such file or directory	File: tinybrowser.php	Line: 112	
+2014-06-10 15:47:40 (CEST)	2 Warning	filemtime() [<a href='function.filemtime'>function.filemtime</a>]: stat failed for /home/svn/repos/gymfed/trunk/www/prilohy/000/064_tn_bf8a5235-b_1-tdm2014_plakat-001-452x640-.jpg	File: tinybrowser.php	Line: 108	
+2014-06-10 15:47:40 (CEST)	2 Warning	filesize() [<a href='function.filesize'>function.filesize</a>]: stat failed for /home/svn/repos/gymfed/trunk/www/prilohy/000/064_tn_bf8a5235-b_1-tdm2014_plakat-001-452x640-.jpg	File: tinybrowser.php	Line: 109	
+2014-06-10 15:47:40 (CEST)	2 Warning	getimagesize(/home/svn/repos/gymfed/trunk/www/prilohy/000/064_tn_bf8a5235-b_1-tdm2014_plakat-001-452x640-.jpg) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: No such file or directory	File: tinybrowser.php	Line: 112	
+2014-06-10 15:47:45 (CEST)	2 Warning	filemtime() [<a href='function.filemtime'>function.filemtime</a>]: stat failed for /home/svn/repos/gymfed/trunk/www/prilohy/000/064bf8a5235-b_1-tdm2014_plakat-001-452x640-.jpg	File: tinybrowser.php	Line: 108	
+2014-06-10 15:47:45 (CEST)	2 Warning	filesize() [<a href='function.filesize'>function.filesize</a>]: stat failed for /home/svn/repos/gymfed/trunk/www/prilohy/000/064bf8a5235-b_1-tdm2014_plakat-001-452x640-.jpg	File: tinybrowser.php	Line: 109	
+2014-06-10 15:47:45 (CEST)	2 Warning	getimagesize(/home/svn/repos/gymfed/trunk/www/prilohy/000/064bf8a5235-b_1-tdm2014_plakat-001-452x640-.jpg) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: No such file or directory	File: tinybrowser.php	Line: 112	
+2014-06-10 15:47:45 (CEST)	2 Warning	filemtime() [<a href='function.filemtime'>function.filemtime</a>]: stat failed for /home/svn/repos/gymfed/trunk/www/prilohy/000/064_tn_bf8a5235-b_1-tdm2014_plakat-001-452x640-.jpg	File: tinybrowser.php	Line: 108	
+2014-06-10 15:47:45 (CEST)	2 Warning	filesize() [<a href='function.filesize'>function.filesize</a>]: stat failed for /home/svn/repos/gymfed/trunk/www/prilohy/000/064_tn_bf8a5235-b_1-tdm2014_plakat-001-452x640-.jpg	File: tinybrowser.php	Line: 109	
+2014-06-10 15:47:45 (CEST)	2 Warning	getimagesize(/home/svn/repos/gymfed/trunk/www/prilohy/000/064_tn_bf8a5235-b_1-tdm2014_plakat-001-452x640-.jpg) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: No such file or directory	File: tinybrowser.php	Line: 112	
+2014-06-10 15:47:56 (CEST)	2 Warning	filemtime() [<a href='function.filemtime'>function.filemtime</a>]: stat failed for /home/svn/repos/gymfed/trunk/www/prilohy/000/064bf8a5235-b_1-tdm2014_plakat-001-452x640-.jpg	File: tinybrowser.php	Line: 108	
+2014-06-10 15:47:56 (CEST)	2 Warning	filesize() [<a href='function.filesize'>function.filesize</a>]: stat failed for /home/svn/repos/gymfed/trunk/www/prilohy/000/064bf8a5235-b_1-tdm2014_plakat-001-452x640-.jpg	File: tinybrowser.php	Line: 109	
+2014-06-10 15:47:56 (CEST)	2 Warning	getimagesize(/home/svn/repos/gymfed/trunk/www/prilohy/000/064bf8a5235-b_1-tdm2014_plakat-001-452x640-.jpg) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: No such file or directory	File: tinybrowser.php	Line: 112	
+2014-06-10 15:47:56 (CEST)	2 Warning	filemtime() [<a href='function.filemtime'>function.filemtime</a>]: stat failed for /home/svn/repos/gymfed/trunk/www/prilohy/000/064_tn_bf8a5235-b_1-tdm2014_plakat-001-452x640-.jpg	File: tinybrowser.php	Line: 108	
+2014-06-10 15:47:56 (CEST)	2 Warning	filesize() [<a href='function.filesize'>function.filesize</a>]: stat failed for /home/svn/repos/gymfed/trunk/www/prilohy/000/064_tn_bf8a5235-b_1-tdm2014_plakat-001-452x640-.jpg	File: tinybrowser.php	Line: 109	
+2014-06-10 15:47:56 (CEST)	2 Warning	getimagesize(/home/svn/repos/gymfed/trunk/www/prilohy/000/064_tn_bf8a5235-b_1-tdm2014_plakat-001-452x640-.jpg) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: No such file or directory	File: tinybrowser.php	Line: 112	
+2014-08-11 14:03:17 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 17	
+2014-08-11 14:05:09 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 17	
+2014-08-11 14:08:03 (CEST)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: File exists	File: fns_tinybrowser.php	Line: 5	
+2014-08-11 14:08:03 (CEST)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: File exists	File: fns_tinybrowser.php	Line: 5	
+2014-08-11 14:08:03 (CEST)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: File exists	File: fns_tinybrowser.php	Line: 5	
+2014-08-11 14:08:03 (CEST)	2 Warning	opendir(/home/svn/repos/gymfed/trunk/wwwhttps://gis.drino.net/redakce/edit-clanek/96) [<a href='function.opendir'>function.opendir</a>]: failed to open dir: No such file or directory	File: fns_tinybrowser.php	Line: 363	
+2014-08-11 14:08:03 (CEST)	2 Warning	readdir(): supplied argument is not a valid Directory resource	File: fns_tinybrowser.php	Line: 364	
+2014-08-11 14:08:03 (CEST)	2 Warning	closedir(): supplied argument is not a valid Directory resource	File: fns_tinybrowser.php	Line: 380	
+2014-08-11 14:18:32 (CEST)	2 Warning	filemtime() [<a href='function.filemtime'>function.filemtime</a>]: stat failed for /home/svn/repos/gymfed/trunk/www/prilohy/000/075120731115836-olympics-tues-03-horizontal-gallery.jpg	File: tinybrowser.php	Line: 108	
+2014-08-11 14:18:32 (CEST)	2 Warning	filesize() [<a href='function.filesize'>function.filesize</a>]: stat failed for /home/svn/repos/gymfed/trunk/www/prilohy/000/075120731115836-olympics-tues-03-horizontal-gallery.jpg	File: tinybrowser.php	Line: 109	
+2014-08-11 14:18:32 (CEST)	2 Warning	getimagesize(/home/svn/repos/gymfed/trunk/www/prilohy/000/075120731115836-olympics-tues-03-horizontal-gallery.jpg) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: No such file or directory	File: tinybrowser.php	Line: 112	
+2014-08-11 14:18:32 (CEST)	2 Warning	filemtime() [<a href='function.filemtime'>function.filemtime</a>]: stat failed for /home/svn/repos/gymfed/trunk/www/prilohy/000/075_tn_120731115836-olympics-tues-03-horizontal-gallery.jpg	File: tinybrowser.php	Line: 108	
+2014-08-11 14:18:32 (CEST)	2 Warning	filesize() [<a href='function.filesize'>function.filesize</a>]: stat failed for /home/svn/repos/gymfed/trunk/www/prilohy/000/075_tn_120731115836-olympics-tues-03-horizontal-gallery.jpg	File: tinybrowser.php	Line: 109	
+2014-08-11 14:18:32 (CEST)	2 Warning	getimagesize(/home/svn/repos/gymfed/trunk/www/prilohy/000/075_tn_120731115836-olympics-tues-03-horizontal-gallery.jpg) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: No such file or directory	File: tinybrowser.php	Line: 112	
+2014-08-11 14:18:32 (CEST)	2 Warning	filemtime() [<a href='function.filemtime'>function.filemtime</a>]: stat failed for /home/svn/repos/gymfed/trunk/www/prilohy/000/075gymnastics.jpg	File: tinybrowser.php	Line: 108	
+2014-08-11 14:18:32 (CEST)	2 Warning	filesize() [<a href='function.filesize'>function.filesize</a>]: stat failed for /home/svn/repos/gymfed/trunk/www/prilohy/000/075gymnastics.jpg	File: tinybrowser.php	Line: 109	
+2014-08-11 14:18:32 (CEST)	2 Warning	getimagesize(/home/svn/repos/gymfed/trunk/www/prilohy/000/075gymnastics.jpg) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: No such file or directory	File: tinybrowser.php	Line: 112	
+2014-08-11 14:18:32 (CEST)	2 Warning	filemtime() [<a href='function.filemtime'>function.filemtime</a>]: stat failed for /home/svn/repos/gymfed/trunk/www/prilohy/000/075_tn_gymnastics.jpg	File: tinybrowser.php	Line: 108	
+2014-08-11 14:18:32 (CEST)	2 Warning	filesize() [<a href='function.filesize'>function.filesize</a>]: stat failed for /home/svn/repos/gymfed/trunk/www/prilohy/000/075_tn_gymnastics.jpg	File: tinybrowser.php	Line: 109	
+2014-08-11 14:18:32 (CEST)	2 Warning	getimagesize(/home/svn/repos/gymfed/trunk/www/prilohy/000/075_tn_gymnastics.jpg) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: No such file or directory	File: tinybrowser.php	Line: 112	
+2014-08-11 14:18:32 (CEST)	2 Warning	filemtime() [<a href='function.filemtime'>function.filemtime</a>]: stat failed for /home/svn/repos/gymfed/trunk/www/prilohy/000/075gymnastics, large.jpg	File: tinybrowser.php	Line: 108	
+2014-08-11 14:18:32 (CEST)	2 Warning	filesize() [<a href='function.filesize'>function.filesize</a>]: stat failed for /home/svn/repos/gymfed/trunk/www/prilohy/000/075gymnastics, large.jpg	File: tinybrowser.php	Line: 109	
+2014-08-11 14:18:32 (CEST)	2 Warning	getimagesize(/home/svn/repos/gymfed/trunk/www/prilohy/000/075gymnastics, large.jpg) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: No such file or directory	File: tinybrowser.php	Line: 112	
+2014-08-11 14:18:32 (CEST)	2 Warning	filemtime() [<a href='function.filemtime'>function.filemtime</a>]: stat failed for /home/svn/repos/gymfed/trunk/www/prilohy/000/075_tn_gymnastics, large.jpg	File: tinybrowser.php	Line: 108	
+2014-08-11 14:18:32 (CEST)	2 Warning	filesize() [<a href='function.filesize'>function.filesize</a>]: stat failed for /home/svn/repos/gymfed/trunk/www/prilohy/000/075_tn_gymnastics, large.jpg	File: tinybrowser.php	Line: 109	
+2014-08-11 14:18:32 (CEST)	2 Warning	getimagesize(/home/svn/repos/gymfed/trunk/www/prilohy/000/075_tn_gymnastics, large.jpg) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: No such file or directory	File: tinybrowser.php	Line: 112	
+2014-08-11 14:18:32 (CEST)	2 Warning	filemtime() [<a href='function.filemtime'>function.filemtime</a>]: stat failed for /home/svn/repos/gymfed/trunk/www/prilohy/000/075TAFTL.jpg	File: tinybrowser.php	Line: 108	
+2014-08-11 14:18:32 (CEST)	2 Warning	filesize() [<a href='function.filesize'>function.filesize</a>]: stat failed for /home/svn/repos/gymfed/trunk/www/prilohy/000/075TAFTL.jpg	File: tinybrowser.php	Line: 109	
+2014-08-11 14:18:32 (CEST)	2 Warning	getimagesize(/home/svn/repos/gymfed/trunk/www/prilohy/000/075TAFTL.jpg) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: No such file or directory	File: tinybrowser.php	Line: 112	
+2014-08-11 14:18:32 (CEST)	2 Warning	filemtime() [<a href='function.filemtime'>function.filemtime</a>]: stat failed for /home/svn/repos/gymfed/trunk/www/prilohy/000/075_tn_TAFTL.jpg	File: tinybrowser.php	Line: 108	
+2014-08-11 14:18:32 (CEST)	2 Warning	filesize() [<a href='function.filesize'>function.filesize</a>]: stat failed for /home/svn/repos/gymfed/trunk/www/prilohy/000/075_tn_TAFTL.jpg	File: tinybrowser.php	Line: 109	
+2014-08-11 14:18:32 (CEST)	2 Warning	getimagesize(/home/svn/repos/gymfed/trunk/www/prilohy/000/075_tn_TAFTL.jpg) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: No such file or directory	File: tinybrowser.php	Line: 112	
+2014-08-11 14:18:42 (CEST)	2 Warning	filemtime() [<a href='function.filemtime'>function.filemtime</a>]: stat failed for /home/svn/repos/gymfed/trunk/www/prilohy/000/075120731115836-olympics-tues-03-horizontal-gallery.jpg	File: tinybrowser.php	Line: 108	
+2014-08-11 14:18:42 (CEST)	2 Warning	filesize() [<a href='function.filesize'>function.filesize</a>]: stat failed for /home/svn/repos/gymfed/trunk/www/prilohy/000/075120731115836-olympics-tues-03-horizontal-gallery.jpg	File: tinybrowser.php	Line: 109	
+2014-08-11 14:18:42 (CEST)	2 Warning	getimagesize(/home/svn/repos/gymfed/trunk/www/prilohy/000/075120731115836-olympics-tues-03-horizontal-gallery.jpg) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: No such file or directory	File: tinybrowser.php	Line: 112	
+2014-08-11 14:18:42 (CEST)	2 Warning	filemtime() [<a href='function.filemtime'>function.filemtime</a>]: stat failed for /home/svn/repos/gymfed/trunk/www/prilohy/000/075_tn_120731115836-olympics-tues-03-horizontal-gallery.jpg	File: tinybrowser.php	Line: 108	
+2014-08-11 14:18:42 (CEST)	2 Warning	filesize() [<a href='function.filesize'>function.filesize</a>]: stat failed for /home/svn/repos/gymfed/trunk/www/prilohy/000/075_tn_120731115836-olympics-tues-03-horizontal-gallery.jpg	File: tinybrowser.php	Line: 109	
+2014-08-11 14:18:42 (CEST)	2 Warning	getimagesize(/home/svn/repos/gymfed/trunk/www/prilohy/000/075_tn_120731115836-olympics-tues-03-horizontal-gallery.jpg) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: No such file or directory	File: tinybrowser.php	Line: 112	
+2014-08-11 14:18:42 (CEST)	2 Warning	filemtime() [<a href='function.filemtime'>function.filemtime</a>]: stat failed for /home/svn/repos/gymfed/trunk/www/prilohy/000/075gymnastics.jpg	File: tinybrowser.php	Line: 108	
+2014-08-11 14:18:42 (CEST)	2 Warning	filesize() [<a href='function.filesize'>function.filesize</a>]: stat failed for /home/svn/repos/gymfed/trunk/www/prilohy/000/075gymnastics.jpg	File: tinybrowser.php	Line: 109	
+2014-08-11 14:18:42 (CEST)	2 Warning	getimagesize(/home/svn/repos/gymfed/trunk/www/prilohy/000/075gymnastics.jpg) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: No such file or directory	File: tinybrowser.php	Line: 112	
+2014-08-11 14:18:42 (CEST)	2 Warning	filemtime() [<a href='function.filemtime'>function.filemtime</a>]: stat failed for /home/svn/repos/gymfed/trunk/www/prilohy/000/075_tn_gymnastics.jpg	File: tinybrowser.php	Line: 108	
+2014-08-11 14:18:42 (CEST)	2 Warning	filesize() [<a href='function.filesize'>function.filesize</a>]: stat failed for /home/svn/repos/gymfed/trunk/www/prilohy/000/075_tn_gymnastics.jpg	File: tinybrowser.php	Line: 109	
+2014-08-11 14:18:42 (CEST)	2 Warning	getimagesize(/home/svn/repos/gymfed/trunk/www/prilohy/000/075_tn_gymnastics.jpg) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: No such file or directory	File: tinybrowser.php	Line: 112	
+2014-08-11 14:18:42 (CEST)	2 Warning	filemtime() [<a href='function.filemtime'>function.filemtime</a>]: stat failed for /home/svn/repos/gymfed/trunk/www/prilohy/000/075gymnastics, large.jpg	File: tinybrowser.php	Line: 108	
+2014-08-11 14:18:42 (CEST)	2 Warning	filesize() [<a href='function.filesize'>function.filesize</a>]: stat failed for /home/svn/repos/gymfed/trunk/www/prilohy/000/075gymnastics, large.jpg	File: tinybrowser.php	Line: 109	
+2014-08-11 14:18:42 (CEST)	2 Warning	getimagesize(/home/svn/repos/gymfed/trunk/www/prilohy/000/075gymnastics, large.jpg) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: No such file or directory	File: tinybrowser.php	Line: 112	
+2014-08-11 14:18:42 (CEST)	2 Warning	filemtime() [<a href='function.filemtime'>function.filemtime</a>]: stat failed for /home/svn/repos/gymfed/trunk/www/prilohy/000/075_tn_gymnastics, large.jpg	File: tinybrowser.php	Line: 108	
+2014-08-11 14:18:42 (CEST)	2 Warning	filesize() [<a href='function.filesize'>function.filesize</a>]: stat failed for /home/svn/repos/gymfed/trunk/www/prilohy/000/075_tn_gymnastics, large.jpg	File: tinybrowser.php	Line: 109	
+2014-08-11 14:18:42 (CEST)	2 Warning	getimagesize(/home/svn/repos/gymfed/trunk/www/prilohy/000/075_tn_gymnastics, large.jpg) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: No such file or directory	File: tinybrowser.php	Line: 112	
+2014-08-11 14:18:42 (CEST)	2 Warning	filemtime() [<a href='function.filemtime'>function.filemtime</a>]: stat failed for /home/svn/repos/gymfed/trunk/www/prilohy/000/075TAFTL.jpg	File: tinybrowser.php	Line: 108	
+2014-08-11 14:18:42 (CEST)	2 Warning	filesize() [<a href='function.filesize'>function.filesize</a>]: stat failed for /home/svn/repos/gymfed/trunk/www/prilohy/000/075TAFTL.jpg	File: tinybrowser.php	Line: 109	
+2014-08-11 14:18:42 (CEST)	2 Warning	getimagesize(/home/svn/repos/gymfed/trunk/www/prilohy/000/075TAFTL.jpg) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: No such file or directory	File: tinybrowser.php	Line: 112	
+2014-08-11 14:18:42 (CEST)	2 Warning	filemtime() [<a href='function.filemtime'>function.filemtime</a>]: stat failed for /home/svn/repos/gymfed/trunk/www/prilohy/000/075_tn_TAFTL.jpg	File: tinybrowser.php	Line: 108	
+2014-08-11 14:18:42 (CEST)	2 Warning	filesize() [<a href='function.filesize'>function.filesize</a>]: stat failed for /home/svn/repos/gymfed/trunk/www/prilohy/000/075_tn_TAFTL.jpg	File: tinybrowser.php	Line: 109	
+2014-08-11 14:18:42 (CEST)	2 Warning	getimagesize(/home/svn/repos/gymfed/trunk/www/prilohy/000/075_tn_TAFTL.jpg) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: No such file or directory	File: tinybrowser.php	Line: 112	
+2014-08-11 14:19:01 (CEST)	2 Warning	filemtime() [<a href='function.filemtime'>function.filemtime</a>]: stat failed for /home/svn/repos/gymfed/trunk/www/prilohy/000/075120731115836-olympics-tues-03-horizontal-gallery.jpg	File: tinybrowser.php	Line: 108	
+2014-08-11 14:19:01 (CEST)	2 Warning	filesize() [<a href='function.filesize'>function.filesize</a>]: stat failed for /home/svn/repos/gymfed/trunk/www/prilohy/000/075120731115836-olympics-tues-03-horizontal-gallery.jpg	File: tinybrowser.php	Line: 109	
+2014-08-11 14:19:01 (CEST)	2 Warning	getimagesize(/home/svn/repos/gymfed/trunk/www/prilohy/000/075120731115836-olympics-tues-03-horizontal-gallery.jpg) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: No such file or directory	File: tinybrowser.php	Line: 112	
+2014-08-11 14:19:01 (CEST)	2 Warning	filemtime() [<a href='function.filemtime'>function.filemtime</a>]: stat failed for /home/svn/repos/gymfed/trunk/www/prilohy/000/075_tn_120731115836-olympics-tues-03-horizontal-gallery.jpg	File: tinybrowser.php	Line: 108	
+2014-08-11 14:19:01 (CEST)	2 Warning	filesize() [<a href='function.filesize'>function.filesize</a>]: stat failed for /home/svn/repos/gymfed/trunk/www/prilohy/000/075_tn_120731115836-olympics-tues-03-horizontal-gallery.jpg	File: tinybrowser.php	Line: 109	
+2014-08-11 14:19:01 (CEST)	2 Warning	getimagesize(/home/svn/repos/gymfed/trunk/www/prilohy/000/075_tn_120731115836-olympics-tues-03-horizontal-gallery.jpg) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: No such file or directory	File: tinybrowser.php	Line: 112	
+2014-08-11 14:19:01 (CEST)	2 Warning	filemtime() [<a href='function.filemtime'>function.filemtime</a>]: stat failed for /home/svn/repos/gymfed/trunk/www/prilohy/000/075gymnastics.jpg	File: tinybrowser.php	Line: 108	
+2014-08-11 14:19:01 (CEST)	2 Warning	filesize() [<a href='function.filesize'>function.filesize</a>]: stat failed for /home/svn/repos/gymfed/trunk/www/prilohy/000/075gymnastics.jpg	File: tinybrowser.php	Line: 109	
+2014-08-11 14:19:01 (CEST)	2 Warning	getimagesize(/home/svn/repos/gymfed/trunk/www/prilohy/000/075gymnastics.jpg) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: No such file or directory	File: tinybrowser.php	Line: 112	
+2014-08-11 14:19:01 (CEST)	2 Warning	filemtime() [<a href='function.filemtime'>function.filemtime</a>]: stat failed for /home/svn/repos/gymfed/trunk/www/prilohy/000/075_tn_gymnastics.jpg	File: tinybrowser.php	Line: 108	
+2014-08-11 14:19:01 (CEST)	2 Warning	filesize() [<a href='function.filesize'>function.filesize</a>]: stat failed for /home/svn/repos/gymfed/trunk/www/prilohy/000/075_tn_gymnastics.jpg	File: tinybrowser.php	Line: 109	
+2014-08-11 14:19:01 (CEST)	2 Warning	getimagesize(/home/svn/repos/gymfed/trunk/www/prilohy/000/075_tn_gymnastics.jpg) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: No such file or directory	File: tinybrowser.php	Line: 112	
+2014-08-11 14:19:01 (CEST)	2 Warning	filemtime() [<a href='function.filemtime'>function.filemtime</a>]: stat failed for /home/svn/repos/gymfed/trunk/www/prilohy/000/075gymnastics, large.jpg	File: tinybrowser.php	Line: 108	
+2014-08-11 14:19:01 (CEST)	2 Warning	filesize() [<a href='function.filesize'>function.filesize</a>]: stat failed for /home/svn/repos/gymfed/trunk/www/prilohy/000/075gymnastics, large.jpg	File: tinybrowser.php	Line: 109	
+2014-08-11 14:19:01 (CEST)	2 Warning	getimagesize(/home/svn/repos/gymfed/trunk/www/prilohy/000/075gymnastics, large.jpg) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: No such file or directory	File: tinybrowser.php	Line: 112	
+2014-08-11 14:19:01 (CEST)	2 Warning	filemtime() [<a href='function.filemtime'>function.filemtime</a>]: stat failed for /home/svn/repos/gymfed/trunk/www/prilohy/000/075_tn_gymnastics, large.jpg	File: tinybrowser.php	Line: 108	
+2014-08-11 14:19:01 (CEST)	2 Warning	filesize() [<a href='function.filesize'>function.filesize</a>]: stat failed for /home/svn/repos/gymfed/trunk/www/prilohy/000/075_tn_gymnastics, large.jpg	File: tinybrowser.php	Line: 109	
+2014-08-11 14:19:01 (CEST)	2 Warning	getimagesize(/home/svn/repos/gymfed/trunk/www/prilohy/000/075_tn_gymnastics, large.jpg) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: No such file or directory	File: tinybrowser.php	Line: 112	
+2014-08-11 14:19:01 (CEST)	2 Warning	filemtime() [<a href='function.filemtime'>function.filemtime</a>]: stat failed for /home/svn/repos/gymfed/trunk/www/prilohy/000/075TAFTL.jpg	File: tinybrowser.php	Line: 108	
+2014-08-11 14:19:01 (CEST)	2 Warning	filesize() [<a href='function.filesize'>function.filesize</a>]: stat failed for /home/svn/repos/gymfed/trunk/www/prilohy/000/075TAFTL.jpg	File: tinybrowser.php	Line: 109	
+2014-08-11 14:19:01 (CEST)	2 Warning	getimagesize(/home/svn/repos/gymfed/trunk/www/prilohy/000/075TAFTL.jpg) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: No such file or directory	File: tinybrowser.php	Line: 112	
+2014-08-11 14:19:01 (CEST)	2 Warning	filemtime() [<a href='function.filemtime'>function.filemtime</a>]: stat failed for /home/svn/repos/gymfed/trunk/www/prilohy/000/075_tn_TAFTL.jpg	File: tinybrowser.php	Line: 108	
+2014-08-11 14:19:01 (CEST)	2 Warning	filesize() [<a href='function.filesize'>function.filesize</a>]: stat failed for /home/svn/repos/gymfed/trunk/www/prilohy/000/075_tn_TAFTL.jpg	File: tinybrowser.php	Line: 109	
+2014-08-11 14:19:01 (CEST)	2 Warning	getimagesize(/home/svn/repos/gymfed/trunk/www/prilohy/000/075_tn_TAFTL.jpg) [<a href='function.getimagesize'>function.getimagesize</a>]: failed to open stream: No such file or directory	File: tinybrowser.php	Line: 112	
+2014-08-11 14:21:51 (CEST)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: File exists	File: fns_tinybrowser.php	Line: 5	
+2014-08-11 14:21:51 (CEST)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: File exists	File: fns_tinybrowser.php	Line: 5	
+2014-08-11 14:21:51 (CEST)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: File exists	File: fns_tinybrowser.php	Line: 5	
+2014-08-11 14:21:51 (CEST)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: File exists	File: fns_tinybrowser.php	Line: 5	
+2014-08-11 14:21:51 (CEST)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: File exists	File: fns_tinybrowser.php	Line: 5	
+2014-08-11 14:21:51 (CEST)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: File exists	File: fns_tinybrowser.php	Line: 5	
+2014-08-11 14:21:51 (CEST)	2 Warning	opendir(/home/svn/repos/gymfed/trunk/wwwhttps://gis.drino.net/js/tiny_mce/plugins/tinybrowser/tinybrowser.php?type=image) [<a href='function.opendir'>function.opendir</a>]: failed to open dir: No such file or directory	File: fns_tinybrowser.php	Line: 363	
+2014-08-11 14:21:51 (CEST)	2 Warning	readdir(): supplied argument is not a valid Directory resource	File: fns_tinybrowser.php	Line: 364	
+2014-08-11 14:21:51 (CEST)	2 Warning	closedir(): supplied argument is not a valid Directory resource	File: fns_tinybrowser.php	Line: 380	
+2014-08-11 14:22:06 (CEST)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: File exists	File: fns_tinybrowser.php	Line: 5	
+2014-08-11 14:22:06 (CEST)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: File exists	File: fns_tinybrowser.php	Line: 5	
+2014-08-11 14:22:06 (CEST)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: File exists	File: fns_tinybrowser.php	Line: 5	
+2014-08-11 14:22:06 (CEST)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: File exists	File: fns_tinybrowser.php	Line: 5	
+2014-08-11 14:22:06 (CEST)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: File exists	File: fns_tinybrowser.php	Line: 5	
+2014-08-11 14:22:06 (CEST)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: File exists	File: fns_tinybrowser.php	Line: 5	
+2014-08-11 14:22:06 (CEST)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: File exists	File: fns_tinybrowser.php	Line: 5	
+2014-08-11 14:22:06 (CEST)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: File exists	File: fns_tinybrowser.php	Line: 5	
+2014-08-11 14:22:06 (CEST)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: File exists	File: fns_tinybrowser.php	Line: 5	
+2014-08-11 14:22:06 (CEST)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: File exists	File: fns_tinybrowser.php	Line: 5	
+2014-08-11 14:22:06 (CEST)	2 Warning	opendir(/home/svn/repos/gymfed/trunk/wwwhttps://gis.drino.net/js/tiny_mce/plugins/tinybrowser/tinybrowser.php?type=image&amp;folder=) [<a href='function.opendir'>function.opendir</a>]: failed to open dir: No such file or directory	File: fns_tinybrowser.php	Line: 363	
+2014-08-11 14:22:06 (CEST)	2 Warning	readdir(): supplied argument is not a valid Directory resource	File: fns_tinybrowser.php	Line: 364	
+2014-08-11 14:22:06 (CEST)	2 Warning	closedir(): supplied argument is not a valid Directory resource	File: fns_tinybrowser.php	Line: 380	
+2014-08-11 14:22:19 (CEST)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: File exists	File: fns_tinybrowser.php	Line: 5	
+2014-08-11 14:22:19 (CEST)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: File exists	File: fns_tinybrowser.php	Line: 5	
+2014-08-11 14:22:19 (CEST)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: File exists	File: fns_tinybrowser.php	Line: 5	
+2014-08-11 14:22:19 (CEST)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: File exists	File: fns_tinybrowser.php	Line: 5	
+2014-08-11 14:22:19 (CEST)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: File exists	File: fns_tinybrowser.php	Line: 5	
+2014-08-11 14:22:19 (CEST)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: File exists	File: fns_tinybrowser.php	Line: 5	
+2014-08-11 14:22:19 (CEST)	2 Warning	opendir(/home/svn/repos/gymfed/trunk/wwwhttps://gis.drino.net/js/tiny_mce/plugins/tinybrowser/tinybrowser.php?type=image) [<a href='function.opendir'>function.opendir</a>]: failed to open dir: No such file or directory	File: fns_tinybrowser.php	Line: 363	
+2014-08-11 14:22:19 (CEST)	2 Warning	readdir(): supplied argument is not a valid Directory resource	File: fns_tinybrowser.php	Line: 364	
+2014-08-11 14:22:19 (CEST)	2 Warning	closedir(): supplied argument is not a valid Directory resource	File: fns_tinybrowser.php	Line: 380	
+2014-08-11 14:32:32 (CEST)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: File exists	File: fns_tinybrowser.php	Line: 5	
+2014-08-11 14:32:32 (CEST)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: File exists	File: fns_tinybrowser.php	Line: 5	
+2014-08-11 14:32:32 (CEST)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: File exists	File: fns_tinybrowser.php	Line: 5	
+2014-08-11 14:32:32 (CEST)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: File exists	File: fns_tinybrowser.php	Line: 5	
+2014-08-11 14:32:32 (CEST)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: File exists	File: fns_tinybrowser.php	Line: 5	
+2014-08-11 14:32:32 (CEST)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: File exists	File: fns_tinybrowser.php	Line: 5	
+2014-08-11 14:32:32 (CEST)	2 Warning	opendir(/home/svn/repos/gymfed/trunk/wwwhttps://gis.drino.net/js/tiny_mce/plugins/tinybrowser/tinybrowser.php?type=image) [<a href='function.opendir'>function.opendir</a>]: failed to open dir: No such file or directory	File: fns_tinybrowser.php	Line: 363	
+2014-08-11 14:32:32 (CEST)	2 Warning	readdir(): supplied argument is not a valid Directory resource	File: fns_tinybrowser.php	Line: 364	
+2014-08-11 14:32:32 (CEST)	2 Warning	closedir(): supplied argument is not a valid Directory resource	File: fns_tinybrowser.php	Line: 380	
+2014-08-11 14:32:41 (CEST)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: File exists	File: fns_tinybrowser.php	Line: 5	
+2014-08-11 14:32:41 (CEST)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: File exists	File: fns_tinybrowser.php	Line: 5	
+2014-08-11 14:32:41 (CEST)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: File exists	File: fns_tinybrowser.php	Line: 5	
+2014-08-11 14:32:41 (CEST)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: File exists	File: fns_tinybrowser.php	Line: 5	
+2014-08-11 14:32:41 (CEST)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: File exists	File: fns_tinybrowser.php	Line: 5	
+2014-08-11 14:32:41 (CEST)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: File exists	File: fns_tinybrowser.php	Line: 5	
+2014-08-11 14:32:41 (CEST)	2 Warning	opendir(/home/svn/repos/gymfed/trunk/wwwhttps://gis.drino.net/js/tiny_mce/plugins/tinybrowser/tinybrowser.php?type=image&amp;folder=) [<a href='function.opendir'>function.opendir</a>]: failed to open dir: No such file or directory	File: fns_tinybrowser.php	Line: 363	
+2014-08-11 14:32:41 (CEST)	2 Warning	readdir(): supplied argument is not a valid Directory resource	File: fns_tinybrowser.php	Line: 364	
+2014-08-11 14:32:41 (CEST)	2 Warning	closedir(): supplied argument is not a valid Directory resource	File: fns_tinybrowser.php	Line: 380	
+2014-08-11 16:08:37 (CEST)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: File exists	File: fns_tinybrowser.php	Line: 5	
+2014-08-11 16:08:37 (CEST)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: File exists	File: fns_tinybrowser.php	Line: 5	
+2014-08-11 16:08:37 (CEST)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: File exists	File: fns_tinybrowser.php	Line: 5	
+2014-08-11 16:08:37 (CEST)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: File exists	File: fns_tinybrowser.php	Line: 5	
+2014-08-11 16:08:37 (CEST)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: File exists	File: fns_tinybrowser.php	Line: 5	
+2014-08-11 16:08:37 (CEST)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: File exists	File: fns_tinybrowser.php	Line: 5	
+2014-08-11 16:08:37 (CEST)	2 Warning	opendir(/home/svn/repos/gymfed/trunk/wwwhttps://gis.drino.net/redakce/edit-clanek/75) [<a href='function.opendir'>function.opendir</a>]: failed to open dir: No such file or directory	File: fns_tinybrowser.php	Line: 363	
+2014-08-11 16:08:37 (CEST)	2 Warning	readdir(): supplied argument is not a valid Directory resource	File: fns_tinybrowser.php	Line: 364	
+2014-08-11 16:08:37 (CEST)	2 Warning	closedir(): supplied argument is not a valid Directory resource	File: fns_tinybrowser.php	Line: 380	
+2014-08-11 16:08:44 (CEST)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: File exists	File: fns_tinybrowser.php	Line: 5	
+2014-08-11 16:08:44 (CEST)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: File exists	File: fns_tinybrowser.php	Line: 5	
+2014-08-11 16:08:44 (CEST)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: File exists	File: fns_tinybrowser.php	Line: 5	
+2014-08-11 16:08:44 (CEST)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: File exists	File: fns_tinybrowser.php	Line: 5	
+2014-08-11 16:08:44 (CEST)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: File exists	File: fns_tinybrowser.php	Line: 5	
+2014-08-11 16:08:44 (CEST)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: File exists	File: fns_tinybrowser.php	Line: 5	
+2014-08-11 16:08:44 (CEST)	2 Warning	opendir(/home/svn/repos/gymfed/trunk/wwwhttps://gis.drino.net/js/tiny_mce/plugins/tinybrowser/tinybrowser.php?type=image) [<a href='function.opendir'>function.opendir</a>]: failed to open dir: No such file or directory	File: fns_tinybrowser.php	Line: 363	
+2014-08-11 16:08:44 (CEST)	2 Warning	readdir(): supplied argument is not a valid Directory resource	File: fns_tinybrowser.php	Line: 364	
+2014-08-11 16:08:44 (CEST)	2 Warning	closedir(): supplied argument is not a valid Directory resource	File: fns_tinybrowser.php	Line: 380	
+2014-08-11 16:11:14 (CEST)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: File exists	File: fns_tinybrowser.php	Line: 5	
+2014-08-11 16:11:14 (CEST)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: File exists	File: fns_tinybrowser.php	Line: 5	
+2014-08-11 16:11:14 (CEST)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: File exists	File: fns_tinybrowser.php	Line: 5	
+2014-08-11 16:11:14 (CEST)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: File exists	File: fns_tinybrowser.php	Line: 5	
+2014-08-11 16:11:14 (CEST)	2 Warning	opendir(/home/svn/repos/gymfed/trunk/wwwhttps://gis.drino.net/redakce/edit-clanek/75) [<a href='function.opendir'>function.opendir</a>]: failed to open dir: No such file or directory	File: fns_tinybrowser.php	Line: 363	
+2014-08-11 16:11:14 (CEST)	2 Warning	readdir(): supplied argument is not a valid Directory resource	File: fns_tinybrowser.php	Line: 364	
+2014-08-11 16:11:14 (CEST)	2 Warning	closedir(): supplied argument is not a valid Directory resource	File: fns_tinybrowser.php	Line: 380	
+2014-08-11 16:11:51 (CEST)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: File exists	File: fns_tinybrowser.php	Line: 5	
+2014-08-11 16:11:51 (CEST)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: File exists	File: fns_tinybrowser.php	Line: 5	
+2014-08-11 16:11:51 (CEST)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: File exists	File: fns_tinybrowser.php	Line: 5	
+2014-08-11 16:11:51 (CEST)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: File exists	File: fns_tinybrowser.php	Line: 5	
+2014-08-11 16:11:51 (CEST)	2 Warning	opendir(/home/svn/repos/gymfed/trunk/wwwhttps://gis.drino.net/redakce/edit-clanek/75) [<a href='function.opendir'>function.opendir</a>]: failed to open dir: No such file or directory	File: fns_tinybrowser.php	Line: 363	
+2014-08-11 16:11:51 (CEST)	2 Warning	readdir(): supplied argument is not a valid Directory resource	File: fns_tinybrowser.php	Line: 364	
+2014-08-11 16:11:51 (CEST)	2 Warning	closedir(): supplied argument is not a valid Directory resource	File: fns_tinybrowser.php	Line: 380	
+2014-08-11 16:12:27 (CEST)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: File exists	File: fns_tinybrowser.php	Line: 5	
+2014-08-11 16:12:27 (CEST)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: File exists	File: fns_tinybrowser.php	Line: 5	
+2014-08-11 16:12:27 (CEST)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: File exists	File: fns_tinybrowser.php	Line: 5	
+2014-08-11 16:12:27 (CEST)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: File exists	File: fns_tinybrowser.php	Line: 5	
+2014-08-11 16:12:27 (CEST)	2 Warning	opendir(/home/svn/repos/gymfed/trunk/wwwhttps://gis.drino.net/redakce/edit-clanek/75) [<a href='function.opendir'>function.opendir</a>]: failed to open dir: No such file or directory	File: fns_tinybrowser.php	Line: 363	
+2014-08-11 16:12:27 (CEST)	2 Warning	readdir(): supplied argument is not a valid Directory resource	File: fns_tinybrowser.php	Line: 364	
+2014-08-11 16:12:27 (CEST)	2 Warning	closedir(): supplied argument is not a valid Directory resource	File: fns_tinybrowser.php	Line: 380	
+2014-08-11 16:13:31 (CEST)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: File exists	File: fns_tinybrowser.php	Line: 5	
+2014-08-11 16:13:31 (CEST)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: File exists	File: fns_tinybrowser.php	Line: 5	
+2014-08-11 16:13:31 (CEST)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: File exists	File: fns_tinybrowser.php	Line: 5	
+2014-08-11 16:13:31 (CEST)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: File exists	File: fns_tinybrowser.php	Line: 5	
+2014-08-11 16:13:31 (CEST)	2 Warning	opendir(/home/svn/repos/gymfed/trunk/wwwhttps://gis.drino.net/redakce/edit-clanek/75) [<a href='function.opendir'>function.opendir</a>]: failed to open dir: No such file or directory	File: fns_tinybrowser.php	Line: 363	
+2014-08-11 16:13:31 (CEST)	2 Warning	readdir(): supplied argument is not a valid Directory resource	File: fns_tinybrowser.php	Line: 364	
+2014-08-11 16:13:31 (CEST)	2 Warning	closedir(): supplied argument is not a valid Directory resource	File: fns_tinybrowser.php	Line: 380	
+2014-08-11 16:13:31 (CEST)	8 Notice	Undefined variable: _SESSION	File: tinybrowser.php	Line: 340	
+2014-08-11 16:14:42 (CEST)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: File exists	File: fns_tinybrowser.php	Line: 5	
+2014-08-11 16:14:42 (CEST)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: File exists	File: fns_tinybrowser.php	Line: 5	
+2014-08-11 16:14:42 (CEST)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: File exists	File: fns_tinybrowser.php	Line: 5	
+2014-08-11 16:14:42 (CEST)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: File exists	File: fns_tinybrowser.php	Line: 5	
+2014-08-11 16:14:42 (CEST)	2 Warning	opendir(/home/svn/repos/gymfed/trunk/wwwhttps://gis.drino.net/redakce/edit-clanek/75) [<a href='function.opendir'>function.opendir</a>]: failed to open dir: No such file or directory	File: fns_tinybrowser.php	Line: 363	
+2014-08-11 16:14:42 (CEST)	2 Warning	readdir(): supplied argument is not a valid Directory resource	File: fns_tinybrowser.php	Line: 364	
+2014-08-11 16:14:42 (CEST)	2 Warning	closedir(): supplied argument is not a valid Directory resource	File: fns_tinybrowser.php	Line: 380	
+2014-08-11 16:14:42 (CEST)	8 Notice	Undefined variable: _SESSION	File: tinybrowser.php	Line: 340	
+2014-08-11 16:15:59 (CEST)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: File exists	File: fns_tinybrowser.php	Line: 5	
+2014-08-11 16:15:59 (CEST)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: File exists	File: fns_tinybrowser.php	Line: 5	
+2014-08-11 16:15:59 (CEST)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: File exists	File: fns_tinybrowser.php	Line: 5	
+2014-08-11 16:15:59 (CEST)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: File exists	File: fns_tinybrowser.php	Line: 5	
+2014-08-11 16:15:59 (CEST)	2 Warning	opendir(/home/svn/repos/gymfed/trunk/wwwhttps://gis.drino.net/redakce/edit-clanek/75) [<a href='function.opendir'>function.opendir</a>]: failed to open dir: No such file or directory	File: fns_tinybrowser.php	Line: 363	
+2014-08-11 16:15:59 (CEST)	2 Warning	readdir(): supplied argument is not a valid Directory resource	File: fns_tinybrowser.php	Line: 364	
+2014-08-11 16:15:59 (CEST)	2 Warning	closedir(): supplied argument is not a valid Directory resource	File: fns_tinybrowser.php	Line: 380	
+2014-08-11 16:15:59 (CEST)	8 Notice	Undefined variable: _SESSION	File: tinybrowser.php	Line: 340	
+2014-08-11 16:18:12 (CEST)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: File exists	File: fns_tinybrowser.php	Line: 5	
+2014-08-11 16:18:12 (CEST)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: File exists	File: fns_tinybrowser.php	Line: 5	
+2014-08-11 16:18:12 (CEST)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: File exists	File: fns_tinybrowser.php	Line: 5	
+2014-08-11 16:18:12 (CEST)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: File exists	File: fns_tinybrowser.php	Line: 5	
+2014-08-11 16:18:12 (CEST)	2 Warning	opendir(/home/svn/repos/gymfed/trunk/wwwhttps://gis.drino.net/redakce/edit-clanek/75) [<a href='function.opendir'>function.opendir</a>]: failed to open dir: No such file or directory	File: fns_tinybrowser.php	Line: 363	
+2014-08-11 16:18:12 (CEST)	2 Warning	readdir(): supplied argument is not a valid Directory resource	File: fns_tinybrowser.php	Line: 364	
+2014-08-11 16:18:12 (CEST)	2 Warning	closedir(): supplied argument is not a valid Directory resource	File: fns_tinybrowser.php	Line: 380	
+2014-08-11 16:18:12 (CEST)	8 Notice	Undefined variable: _SESSION	File: tinybrowser.php	Line: 340	
+2014-08-11 16:20:00 (CEST)	8 Notice	Undefined variable: _SESSION	File: tinybrowser.php	Line: 340	
+2014-08-11 16:23:16 (CEST)	8 Notice	Undefined variable: _SESSION	File: tinybrowser.php	Line: 340	
+2014-08-11 16:23:20 (CEST)	8 Notice	Undefined variable: _SESSION	File: tinybrowser.php	Line: 340	
+2014-08-11 16:23:37 (CEST)	8 Notice	Undefined variable: _SESSION	File: tinybrowser.php	Line: 340	
+2014-08-11 16:25:30 (CEST)	8 Notice	Undefined variable: _SESSION	File: tinybrowser.php	Line: 343	
+2014-08-11 16:30:46 (CEST)	8 Notice	Undefined variable: _SESSION	File: tinybrowser.php	Line: 351	
+2014-08-11 16:31:45 (CEST)	8 Notice	Undefined variable: _SESSION	File: tinybrowser.php	Line: 354	
+2014-08-11 16:32:29 (CEST)	8 Notice	Undefined variable: _SESSION	File: tinybrowser.php	Line: 354	
+2014-08-11 16:32:29 (CEST)	8 Notice	Undefined variable: _SESSION	File: tinybrowser.php	Line: 357	
+2014-08-11 16:32:47 (CEST)	8 Notice	Undefined variable: _SESSION	File: tinybrowser.php	Line: 354	
+2014-08-11 16:32:47 (CEST)	8 Notice	Undefined variable: _SESSION	File: tinybrowser.php	Line: 358	
+2014-08-11 16:51:32 (CEST)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: File exists	File: fns_tinybrowser.php	Line: 5	
+2014-08-11 16:51:32 (CEST)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: File exists	File: fns_tinybrowser.php	Line: 5	
+2014-08-11 16:51:32 (CEST)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: File exists	File: fns_tinybrowser.php	Line: 5	
+2014-08-11 16:51:32 (CEST)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: File exists	File: fns_tinybrowser.php	Line: 5	
+2014-08-11 16:51:32 (CEST)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: File exists	File: fns_tinybrowser.php	Line: 5	
+2014-08-11 16:51:32 (CEST)	2 Warning	mkdir() [<a href='function.mkdir'>function.mkdir</a>]: File exists	File: fns_tinybrowser.php	Line: 5	
+2014-08-11 16:51:32 (CEST)	2 Warning	opendir(/home/svn/repos/gymfed/trunk/wwwhttps://gis.drino.net/js/tiny_mce/plugins/tinybrowser/tinybrowser.php?type=image) [<a href='function.opendir'>function.opendir</a>]: failed to open dir: No such file or directory	File: fns_tinybrowser.php	Line: 363	
+2014-08-11 16:51:32 (CEST)	2 Warning	readdir(): supplied argument is not a valid Directory resource	File: fns_tinybrowser.php	Line: 364	
+2014-08-11 16:51:32 (CEST)	2 Warning	closedir(): supplied argument is not a valid Directory resource	File: fns_tinybrowser.php	Line: 380	
+2014-08-11 17:27:03 (CEST)	8 Notice	Undefined variable: _SESSION	File: tinybrowser.php	Line: 25	
+2014-08-11 17:27:08 (CEST)	8 Notice	Undefined variable: _SESSION	File: tinybrowser.php	Line: 25	
+2014-08-11 17:27:12 (CEST)	8 Notice	Undefined variable: _SESSION	File: tinybrowser.php	Line: 25	
+2014-08-11 17:27:15 (CEST)	8 Notice	Undefined variable: _SESSION	File: tinybrowser.php	Line: 25	
+2014-08-11 17:28:31 (CEST)	8 Notice	Undefined variable: _SESSION	File: tinybrowser.php	Line: 26	
+2014-08-11 17:29:29 (CEST)	8 Notice	Undefined variable: _SESSION	File: tinybrowser.php	Line: 26	
+2014-08-11 17:30:14 (CEST)	8 Notice	Undefined variable: _SESSION	File: tinybrowser.php	Line: 26	
+2014-08-11 17:30:43 (CEST)	8 Notice	Undefined variable: _SESSION	File: tinybrowser.php	Line: 28	
+2014-08-11 17:31:28 (CEST)	8 Notice	Undefined variable: _SESSION	File: tinybrowser.php	Line: 28	
+2014-08-11 17:31:35 (CEST)	8 Notice	Undefined variable: _SESSION	File: tinybrowser.php	Line: 28	
+2014-08-11 17:32:06 (CEST)	8 Notice	Undefined variable: _SESSION	File: tinybrowser.php	Line: 28	
+2014-08-11 17:34:08 (CEST)	8 Notice	Undefined variable: _SESSION	File: tinybrowser.php	Line: 28	
+2014-08-11 17:34:14 (CEST)	8 Notice	Undefined variable: _SESSION	File: tinybrowser.php	Line: 28	
+2014-08-11 17:34:16 (CEST)	8 Notice	Undefined variable: _SESSION	File: tinybrowser.php	Line: 28	
+2014-08-11 17:35:10 (CEST)	8 Notice	Undefined variable: _SESSION	File: tinybrowser.php	Line: 28	
+2014-08-11 17:37:12 (CEST)	8 Notice	Undefined variable: _SESSION	File: tinybrowser.php	Line: 28	
+2014-08-11 17:38:34 (CEST)	8 Notice	Undefined variable: _SESSION	File: tinybrowser.php	Line: 29	
+2014-08-11 17:38:40 (CEST)	8 Notice	Undefined variable: _SESSION	File: tinybrowser.php	Line: 29	
+2014-08-11 17:38:42 (CEST)	8 Notice	Undefined variable: _SESSION	File: tinybrowser.php	Line: 29	
+2014-08-11 17:39:18 (CEST)	8 Notice	Undefined variable: _SESSION	File: tinybrowser.php	Line: 29	
+2014-08-11 17:39:36 (CEST)	8 Notice	Undefined variable: _SESSION	File: tinybrowser.php	Line: 29	
+2014-08-11 17:41:29 (CEST)	8 Notice	Undefined variable: _SESSION	File: tinybrowser.php	Line: 40	
+2014-08-11 17:42:15 (CEST)	8 Notice	Undefined variable: _SESSION	File: tinybrowser.php	Line: 43	
+2014-08-11 17:42:55 (CEST)	8 Notice	Undefined variable: _SESSION	File: tinybrowser.php	Line: 46	
+2014-08-11 17:43:20 (CEST)	8 Notice	Undefined variable: _SESSION	File: tinybrowser.php	Line: 45	
+2014-08-11 17:43:28 (CEST)	8 Notice	Undefined variable: _SESSION	File: tinybrowser.php	Line: 45	
+2014-08-11 17:47:49 (CEST)	8 Notice	Undefined variable: _SESSION	File: tinybrowser.php	Line: 45	
+2014-08-11 17:48:20 (CEST)	8 Notice	Undefined variable: _SESSION	File: tinybrowser.php	Line: 45	
+2014-08-11 17:48:39 (CEST)	8 Notice	Undefined variable: _SESSION	File: tinybrowser.php	Line: 45	
+2014-08-11 17:53:19 (CEST)	8 Notice	Undefined variable: _SESSION	File: tinybrowser.php	Line: 45	
+2014-08-11 17:53:52 (CEST)	8 Notice	Undefined variable: _SESSION	File: tinybrowser.php	Line: 45	
+2014-08-11 17:54:24 (CEST)	8 Notice	Undefined variable: _SESSION	File: tinybrowser.php	Line: 45	
+2014-08-11 18:04:05 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 39	
+2014-08-11 18:08:05 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 39	
+2014-08-11 18:11:09 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 35	
+2014-08-11 18:12:11 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 38	
+2014-08-11 18:14:55 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 38	
+2014-08-11 18:15:40 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 41	
+2014-08-11 18:16:33 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 44	
+2014-08-11 18:17:35 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 43	
+2014-08-11 18:17:39 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 43	
+2014-08-11 18:17:44 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 43	
+2014-08-11 18:18:38 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 35	
+2014-08-11 18:18:42 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 35	
+2014-08-11 18:18:45 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 35	
+2014-08-11 18:19:32 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 35	
+2014-08-11 18:21:21 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 35	
+2014-08-11 18:22:39 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 35	
+2014-08-11 18:22:56 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 35	
+2014-08-11 18:23:16 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 35	
+2014-08-11 18:24:18 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 35	
+2014-08-11 18:30:11 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 35	
+2014-08-11 18:34:24 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 35	
+2014-08-11 18:35:03 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 35	
+2014-08-11 18:35:48 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 37	
+2014-08-11 18:37:10 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 37	
+2014-08-11 18:37:13 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 37	
+2014-08-11 18:37:15 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 37	
+2014-08-11 18:37:40 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 35	
+2014-08-11 18:37:43 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 35	
+2014-08-11 18:37:45 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 35	
+2014-08-11 18:37:46 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 35	
+2014-08-11 18:37:52 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 35	
+2014-08-11 18:38:04 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 35	
+2014-08-11 18:38:08 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 35	
+2014-08-11 18:38:11 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 35	
+2014-08-11 18:43:51 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 20	
+2014-08-11 18:43:51 (CEST)	2 Warning	opendir(/home/svn/repos/gymfed/trunk/www/prilohy/000/097/) [<a href='function.opendir'>function.opendir</a>]: failed to open dir: No such file or directory	File: fns_tinybrowser.php	Line: 364	
+2014-08-11 18:43:51 (CEST)	2 Warning	readdir(): supplied argument is not a valid Directory resource	File: fns_tinybrowser.php	Line: 365	
+2014-08-11 18:43:51 (CEST)	2 Warning	closedir(): supplied argument is not a valid Directory resource	File: fns_tinybrowser.php	Line: 381	
+2014-08-11 18:44:35 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 20	
+2014-08-11 18:47:00 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 20	
+2014-08-11 18:47:00 (CEST)	2 Warning	opendir(/home/svn/repos/gymfed/trunk/www/prilohy/000/097/) [<a href='function.opendir'>function.opendir</a>]: failed to open dir: No such file or directory	File: fns_tinybrowser.php	Line: 364	
+2014-08-11 18:47:00 (CEST)	2 Warning	readdir(): supplied argument is not a valid Directory resource	File: fns_tinybrowser.php	Line: 365	
+2014-08-11 18:47:00 (CEST)	2 Warning	closedir(): supplied argument is not a valid Directory resource	File: fns_tinybrowser.php	Line: 381	
+2014-08-12 15:36:21 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 18	
+2014-08-12 15:36:26 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 18	
+2014-08-12 15:36:29 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 18	
+2014-08-12 15:46:33 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 18	
+2014-08-12 15:46:34 (CEST)	2 Warning	imagejpeg() [<a href='function.imagejpeg'>function.imagejpeg</a>]: Unable to open '/home/svn/repos/gymfed/trunk/www/prilohy/000/075/_thumbs/_120731115836-olympics-tues-03-horizontal-gallery.jpg' for writing: No such file or directory	File: fns_tinybrowser.php	Line: 114	
+2014-08-12 15:46:34 (CEST)	2 Warning	imagejpeg() [<a href='function.imagejpeg'>function.imagejpeg</a>]: Unable to open '/home/svn/repos/gymfed/trunk/www/prilohy/000/075/_thumbs/__tn_120731115836-olympics-tues-03-horizontal-gallery.jpg' for writing: No such file or directory	File: fns_tinybrowser.php	Line: 114	
+2014-08-12 15:46:34 (CEST)	2 Warning	imagejpeg() [<a href='function.imagejpeg'>function.imagejpeg</a>]: Unable to open '/home/svn/repos/gymfed/trunk/www/prilohy/000/075/_thumbs/_gymnastics.jpg' for writing: No such file or directory	File: fns_tinybrowser.php	Line: 114	
+2014-08-12 15:46:34 (CEST)	2 Warning	imagejpeg() [<a href='function.imagejpeg'>function.imagejpeg</a>]: Unable to open '/home/svn/repos/gymfed/trunk/www/prilohy/000/075/_thumbs/__tn_gymnastics.jpg' for writing: No such file or directory	File: fns_tinybrowser.php	Line: 114	
+2014-08-12 15:46:34 (CEST)	2 Warning	imagejpeg() [<a href='function.imagejpeg'>function.imagejpeg</a>]: Unable to open '/home/svn/repos/gymfed/trunk/www/prilohy/000/075/_thumbs/_gymnastics, large.jpg' for writing: No such file or directory	File: fns_tinybrowser.php	Line: 114	
+2014-08-12 15:46:34 (CEST)	2 Warning	imagejpeg() [<a href='function.imagejpeg'>function.imagejpeg</a>]: Unable to open '/home/svn/repos/gymfed/trunk/www/prilohy/000/075/_thumbs/__tn_gymnastics, large.jpg' for writing: No such file or directory	File: fns_tinybrowser.php	Line: 114	
+2014-08-12 15:46:34 (CEST)	2 Warning	imagejpeg() [<a href='function.imagejpeg'>function.imagejpeg</a>]: Unable to open '/home/svn/repos/gymfed/trunk/www/prilohy/000/075/_thumbs/_TAFTL.jpg' for writing: No such file or directory	File: fns_tinybrowser.php	Line: 114	
+2014-08-12 15:46:34 (CEST)	2 Warning	imagejpeg() [<a href='function.imagejpeg'>function.imagejpeg</a>]: Unable to open '/home/svn/repos/gymfed/trunk/www/prilohy/000/075/_thumbs/__tn_TAFTL.jpg' for writing: No such file or directory	File: fns_tinybrowser.php	Line: 114	
+2014-08-12 15:46:39 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 18	
+2014-08-12 15:46:39 (CEST)	2 Warning	imagejpeg() [<a href='function.imagejpeg'>function.imagejpeg</a>]: Unable to open '/home/svn/repos/gymfed/trunk/www/prilohy/000/075/_thumbs/_120731115836-olympics-tues-03-horizontal-gallery.jpg' for writing: No such file or directory	File: fns_tinybrowser.php	Line: 114	
+2014-08-12 15:46:39 (CEST)	2 Warning	imagejpeg() [<a href='function.imagejpeg'>function.imagejpeg</a>]: Unable to open '/home/svn/repos/gymfed/trunk/www/prilohy/000/075/_thumbs/__tn_120731115836-olympics-tues-03-horizontal-gallery.jpg' for writing: No such file or directory	File: fns_tinybrowser.php	Line: 114	
+2014-08-12 15:46:39 (CEST)	2 Warning	imagejpeg() [<a href='function.imagejpeg'>function.imagejpeg</a>]: Unable to open '/home/svn/repos/gymfed/trunk/www/prilohy/000/075/_thumbs/_gymnastics.jpg' for writing: No such file or directory	File: fns_tinybrowser.php	Line: 114	
+2014-08-12 15:46:39 (CEST)	2 Warning	imagejpeg() [<a href='function.imagejpeg'>function.imagejpeg</a>]: Unable to open '/home/svn/repos/gymfed/trunk/www/prilohy/000/075/_thumbs/__tn_gymnastics.jpg' for writing: No such file or directory	File: fns_tinybrowser.php	Line: 114	
+2014-08-12 15:46:39 (CEST)	2 Warning	imagejpeg() [<a href='function.imagejpeg'>function.imagejpeg</a>]: Unable to open '/home/svn/repos/gymfed/trunk/www/prilohy/000/075/_thumbs/_gymnastics, large.jpg' for writing: No such file or directory	File: fns_tinybrowser.php	Line: 114	
+2014-08-12 15:46:39 (CEST)	2 Warning	imagejpeg() [<a href='function.imagejpeg'>function.imagejpeg</a>]: Unable to open '/home/svn/repos/gymfed/trunk/www/prilohy/000/075/_thumbs/__tn_gymnastics, large.jpg' for writing: No such file or directory	File: fns_tinybrowser.php	Line: 114	
+2014-08-12 15:46:39 (CEST)	2 Warning	imagejpeg() [<a href='function.imagejpeg'>function.imagejpeg</a>]: Unable to open '/home/svn/repos/gymfed/trunk/www/prilohy/000/075/_thumbs/_TAFTL.jpg' for writing: No such file or directory	File: fns_tinybrowser.php	Line: 114	
+2014-08-12 15:46:39 (CEST)	2 Warning	imagejpeg() [<a href='function.imagejpeg'>function.imagejpeg</a>]: Unable to open '/home/svn/repos/gymfed/trunk/www/prilohy/000/075/_thumbs/__tn_TAFTL.jpg' for writing: No such file or directory	File: fns_tinybrowser.php	Line: 114	
+2014-08-12 15:46:44 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 18	
+2014-08-12 15:46:44 (CEST)	2 Warning	imagejpeg() [<a href='function.imagejpeg'>function.imagejpeg</a>]: Unable to open '/home/svn/repos/gymfed/trunk/www/prilohy/000/075/_thumbs/_120731115836-olympics-tues-03-horizontal-gallery.jpg' for writing: No such file or directory	File: fns_tinybrowser.php	Line: 114	
+2014-08-12 15:46:44 (CEST)	2 Warning	imagejpeg() [<a href='function.imagejpeg'>function.imagejpeg</a>]: Unable to open '/home/svn/repos/gymfed/trunk/www/prilohy/000/075/_thumbs/__tn_120731115836-olympics-tues-03-horizontal-gallery.jpg' for writing: No such file or directory	File: fns_tinybrowser.php	Line: 114	
+2014-08-12 15:46:44 (CEST)	2 Warning	imagejpeg() [<a href='function.imagejpeg'>function.imagejpeg</a>]: Unable to open '/home/svn/repos/gymfed/trunk/www/prilohy/000/075/_thumbs/_gymnastics.jpg' for writing: No such file or directory	File: fns_tinybrowser.php	Line: 114	
+2014-08-12 15:46:44 (CEST)	2 Warning	imagejpeg() [<a href='function.imagejpeg'>function.imagejpeg</a>]: Unable to open '/home/svn/repos/gymfed/trunk/www/prilohy/000/075/_thumbs/__tn_gymnastics.jpg' for writing: No such file or directory	File: fns_tinybrowser.php	Line: 114	
+2014-08-12 15:46:44 (CEST)	2 Warning	imagejpeg() [<a href='function.imagejpeg'>function.imagejpeg</a>]: Unable to open '/home/svn/repos/gymfed/trunk/www/prilohy/000/075/_thumbs/_gymnastics, large.jpg' for writing: No such file or directory	File: fns_tinybrowser.php	Line: 114	
+2014-08-12 15:46:44 (CEST)	2 Warning	imagejpeg() [<a href='function.imagejpeg'>function.imagejpeg</a>]: Unable to open '/home/svn/repos/gymfed/trunk/www/prilohy/000/075/_thumbs/__tn_gymnastics, large.jpg' for writing: No such file or directory	File: fns_tinybrowser.php	Line: 114	
+2014-08-12 15:46:44 (CEST)	2 Warning	imagejpeg() [<a href='function.imagejpeg'>function.imagejpeg</a>]: Unable to open '/home/svn/repos/gymfed/trunk/www/prilohy/000/075/_thumbs/_TAFTL.jpg' for writing: No such file or directory	File: fns_tinybrowser.php	Line: 114	
+2014-08-12 15:46:44 (CEST)	2 Warning	imagejpeg() [<a href='function.imagejpeg'>function.imagejpeg</a>]: Unable to open '/home/svn/repos/gymfed/trunk/www/prilohy/000/075/_thumbs/__tn_TAFTL.jpg' for writing: No such file or directory	File: fns_tinybrowser.php	Line: 114	
+2014-08-12 15:48:11 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 18	
+2014-08-12 15:48:11 (CEST)	2 Warning	opendir(/home/svn/repos/gymfed/trunk/www/prilohy/000/097/) [<a href='function.opendir'>function.opendir</a>]: failed to open dir: No such file or directory	File: fns_tinybrowser.php	Line: 364	
+2014-08-12 15:48:11 (CEST)	2 Warning	readdir(): supplied argument is not a valid Directory resource	File: fns_tinybrowser.php	Line: 365	
+2014-08-12 15:48:11 (CEST)	2 Warning	closedir(): supplied argument is not a valid Directory resource	File: fns_tinybrowser.php	Line: 381	
+2014-08-12 15:48:19 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 18	
+2014-08-12 15:48:19 (CEST)	2 Warning	opendir(/home/svn/repos/gymfed/trunk/www/prilohy/000/097/) [<a href='function.opendir'>function.opendir</a>]: failed to open dir: No such file or directory	File: fns_tinybrowser.php	Line: 364	
+2014-08-12 15:48:19 (CEST)	2 Warning	readdir(): supplied argument is not a valid Directory resource	File: fns_tinybrowser.php	Line: 365	
+2014-08-12 15:48:19 (CEST)	2 Warning	closedir(): supplied argument is not a valid Directory resource	File: fns_tinybrowser.php	Line: 381	
+2014-08-12 15:54:15 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 18	
+2014-08-12 15:54:15 (CEST)	2 Warning	opendir(/home/svn/repos/gymfed/trunk/www/prilohy/000/097/) [<a href='function.opendir'>function.opendir</a>]: failed to open dir: No such file or directory	File: fns_tinybrowser.php	Line: 364	
+2014-08-12 15:54:15 (CEST)	2 Warning	readdir(): supplied argument is not a valid Directory resource	File: fns_tinybrowser.php	Line: 365	
+2014-08-12 15:54:15 (CEST)	2 Warning	closedir(): supplied argument is not a valid Directory resource	File: fns_tinybrowser.php	Line: 381	
+2014-08-12 15:54:38 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 18	
+2014-08-12 15:55:26 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 18	
+2014-08-12 15:55:50 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 18	
+2014-08-12 15:55:51 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 18	
+2014-08-12 15:57:59 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 18	
+2014-08-12 15:58:06 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 18	
+2014-08-12 15:59:32 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 18	
+2014-08-12 16:02:19 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 18	
+2014-08-12 16:02:24 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 18	
+2014-08-12 16:03:58 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 18	
+2014-08-12 16:05:06 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 18	
+2014-08-12 16:05:13 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 18	
+2014-08-12 16:06:03 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 18	
+2014-08-12 16:06:50 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 18	
+2014-08-12 16:07:27 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 18	
+2014-08-12 16:07:39 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 18	
+2014-08-12 16:07:41 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 18	
+2014-08-12 16:07:42 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 18	
+2014-08-12 16:07:43 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 18	
+2014-08-12 16:07:46 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 18	
+2014-08-12 16:07:49 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 18	
+2014-08-12 16:07:55 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 18	
+2014-08-12 16:08:00 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 18	
+2014-08-12 16:08:05 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 18	
+2014-08-12 16:08:08 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 18	
+2014-08-12 16:08:11 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 18	
+2014-08-12 16:08:15 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 18	
+2014-08-12 16:09:50 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 18	
+2014-08-12 16:10:00 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 18	
+2014-08-12 16:10:05 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 18	
+2014-08-12 16:10:11 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 18	
+2014-08-12 16:10:14 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 18	
+2014-08-12 16:10:19 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 18	
+2014-08-12 16:10:23 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 18	
+2014-08-12 16:10:25 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 18	
+2014-08-12 16:10:26 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 18	
+2014-08-12 16:10:31 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 18	
+2014-08-12 16:10:36 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 18	
+2014-08-12 16:11:22 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 18	
+2014-08-12 16:13:06 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 18	
+2014-08-12 16:13:10 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 18	
+2014-08-12 16:16:48 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 18	
+2014-08-12 16:18:21 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 18	
+2014-08-12 19:20:30 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 18	
+2014-08-12 19:20:34 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 18	
+2014-08-12 19:20:36 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 18	
+2014-08-12 19:21:30 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 18	
+2014-08-12 19:21:30 (CEST)	2 Warning	opendir(/home/svn/repos/gymfed/trunk/www/prilohy/000/097/) [<a href='function.opendir'>function.opendir</a>]: failed to open dir: No such file or directory	File: fns_tinybrowser.php	Line: 364	
+2014-08-12 19:21:30 (CEST)	2 Warning	readdir(): supplied argument is not a valid Directory resource	File: fns_tinybrowser.php	Line: 365	
+2014-08-12 19:21:30 (CEST)	2 Warning	closedir(): supplied argument is not a valid Directory resource	File: fns_tinybrowser.php	Line: 381	
+2014-08-12 19:21:50 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 18	
+2014-08-12 19:23:11 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 18	
+2014-08-12 19:23:12 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 18	
+2014-08-26 15:12:58 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 18	
+2014-08-26 15:32:35 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 18	
+2014-08-26 15:32:35 (CEST)	2 Warning	opendir(/home/svn/repos/gymfed/trunk/www/prilohy/000/097/) [<a href='function.opendir'>function.opendir</a>]: failed to open dir: No such file or directory	File: fns_tinybrowser.php	Line: 364	
+2014-08-26 15:32:35 (CEST)	2 Warning	readdir(): supplied argument is not a valid Directory resource	File: fns_tinybrowser.php	Line: 365	
+2014-08-26 15:32:35 (CEST)	2 Warning	closedir(): supplied argument is not a valid Directory resource	File: fns_tinybrowser.php	Line: 381	
+2014-08-26 15:34:21 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 18	
+2014-08-26 15:34:21 (CEST)	2 Warning	opendir(/home/svn/repos/gymfed/trunk/www/prilohy/000/097/) [<a href='function.opendir'>function.opendir</a>]: failed to open dir: No such file or directory	File: fns_tinybrowser.php	Line: 364	
+2014-08-26 15:34:21 (CEST)	2 Warning	readdir(): supplied argument is not a valid Directory resource	File: fns_tinybrowser.php	Line: 365	
+2014-08-26 15:34:21 (CEST)	2 Warning	closedir(): supplied argument is not a valid Directory resource	File: fns_tinybrowser.php	Line: 381	
+2014-08-26 15:34:52 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 18	
+2014-08-26 15:36:01 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 18	
+2014-08-26 15:36:24 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 18	
+2014-08-26 15:36:42 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 18	
+2014-08-26 15:36:49 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 18	
+2014-08-26 15:37:04 (CEST)	8 Notice	Undefined index:  sessioncheck	File: tinybrowser.php	Line: 18	

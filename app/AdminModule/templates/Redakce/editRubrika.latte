@@ -1,0 +1,13 @@
+{extends 'base.latte'}
+{block sekce}Upravit rubriku - {$rubrika['nazev']}{/block}
+{block obsah}
+{if $rubrika['id']!=$id_hlavni_skupiny}  
+    <h3>Vlastnosti rubriky</h3>
+    {control editRubrikaForm}
+    <br/>
+{/if}
+{if $rubrika['rodic']==$id_hlavni_skupiny || $rubrika['id']==$id_hlavni_skupiny}
+<h3>Nová podrubrika</h3>
+{control novaRubrikaForm}
+{/if}
+<div class='bottom_nav'><a n:href="rubriky $rubrika['id']">Zpět na rubriku</a></div>

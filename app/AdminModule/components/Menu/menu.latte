@@ -1,0 +1,12 @@
+<nav class="span3">
+<ul class="nav">
+{foreach $items as $item=>$odkaz}
+  {if $odkaz['parametry']}
+    <li><a href="{plink $odkaz['odkaz'] $odkaz['parametry']}">{$item}</a> </li>
+    {else}
+   <li><a href="{plink $odkaz['odkaz']}">{$item}</a> </li>
+   {/if}
+ {/foreach}
+ 
+</ul>
+</nav>

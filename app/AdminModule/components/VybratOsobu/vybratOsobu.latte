@@ -1,0 +1,9 @@
+    Vyberte osobu:
+    <table>
+        {foreach $osoby as $osoba}
+        <tr>
+            <td><a n:href="$action $osoba['id']">{$osoba['prijmeni']} {$osoba['jmeno']}</a></td>
+            <td>{$osoba['rc']|rokNarozeni}</td>            
+        </tr>
+        {/foreach}
+    </table>

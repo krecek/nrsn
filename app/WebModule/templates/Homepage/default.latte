@@ -1,0 +1,24 @@
+{block head}     
+<script src="{$basePath}/js/cycle/jquery.cycle.all.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+    $('.slideshow').cycle({
+                fx: 'fade', // choose your transition type, ex: fade, scrollUp, shuffle, etc...
+                containerResize: 0,
+                fit: false,
+                slideResize:1
+        });
+});
+</script>
+{/block}
+{block topclanek}{control topClanky}{/block}
+{block content}
+
+{control seznamClanku}
+<div width="100%" class="right"><a n:href="Archiv:default">další články</a></div>
+
+{/block}
+{block calendar}
+{control kalendar}
+{/block}
+

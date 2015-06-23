@@ -1,0 +1,18 @@
+<div class='seznam_akci'>
+ 
+       <h2 class="oddelit">Akce</h2>
+        <div class="akce">
+            <div class="akce_zahlavi oddo">
+                <h3>Termínová listina</h3>
+            </div>
+            <div class="popis_akce hidden">
+                <ul>
+                    {dump $terminova_listina}
+                {foreach $terminova_listina as $adresa=>$priloha}
+ <li><img src="{$basePath}/{$priloha['nahled']}" alt="" title="zobrazit"/> <a href="{$basePath}/{$adresa}">{$priloha['nazev']}</a></li>
+{/foreach}
+                </ul>
+            </div>
+        </div>
+   
+</div>

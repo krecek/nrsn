@@ -1,0 +1,66 @@
+{**
+ * My Application layout template.
+ *
+ * @param string   $basePath web base path
+ * @param string   $robots   tell robots how to index the content of a page (optional)
+ * @param array    $flashes  flash messages
+ *}
+
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="">
+        <meta name="robots" content="{$robots}" n:ifset="$robots">
+
+        <script src="{$basePath}/js/jquery.js"></script>
+        <script src="{$basePath}/js/nette.ajax.js"></script>
+        
+        <script src="{$basePath}/js/plupload/plupload.full.min.js"></script>
+        <script src="{$basePath}/js/plupload/jquery.plupload.queue/jquery.plupload.queue.js"></script>
+        <script src="{$basePath}/js/plupload/cs.js"></script>
+                <link rel="stylesheet" media="screen,projection,tv" href="{$basePath}/css/custom-theme-red/custom-theme/jquery-ui-1.10.4.custom.css">
+        <link rel="stylesheet" media="screen,projection,tv" href="{$basePath}/js/plupload/jquery.plupload.queue/css/jquery.plupload.queue.css">
+        
+        
+        <script src="{$basePath}/js/tiny_mce/tiny_mce.js"></script>
+        
+        <!--<script src="{$basePath}/js/jquery-ui-1.10.3.custom.js"></script>-->
+        <script src="{$basePath}/js/jquery-ui-1.10.4.custom.js"></script>
+        <script src="{$basePath}/js/netteForms.js"></script>
+        <script src="{$basePath}/js/live-form-validation.js"></script>
+        <script src="{$basePath}/js/main.js"></script>
+        <title>{block title|striptags}GIS{block subtitle}{/block}{/block}</title>
+
+        <link rel="stylesheet" media="screen,projection,tv" href="{$basePath}/css/screen.css">
+  <!--[if IE 7]>
+ <link rel="stylesheet" href="{$basePath}/css/styleIE7.css">
+<![endif]-->
+<!--[if gte IE 9]>
+<link rel="stylesheet" href="{$basePath}/css/styleIE9.css">
+<![endif]-->
+        <link rel="stylesheet" media="screen,projection,tv" href="{$basePath}/css/ui-lightness/jquery-ui-1.10.3.custom.css">
+        <link rel="stylesheet" media="print" href="{$basePath}/css/print.css">
+       	<link rel="shortcut icon" href="{$basePath}/favicon.ico">
+	{block head}{/block}
+    </head>
+
+    <body{if $debugMod} class="demo"{/if}>
+        <div id="container">
+            <script> document.documentElement.className+=' js' </script>
+        {if $user->isLoggedIn()}
+            <div class="top inner"><span id="pos"><a n:href="Homepage:" class="home" title="Home"><span>&nbsp;</span></a></span>
+                <div class="user">
+                    <span class="icon_user"><a n:href="Osoby:prehled $user->getIdentity()->id">{$user->getIdentity()->username}</a></span>  |
+                    <a n:href="odhlasit!">Odhlásit se</a>
+                </div>
+
+            </div>
+            <div class="bgline"><div class="span3">&nbsp;</div><div class="span9 hlmenu">{control hlavniMenu}</div><div class="cl">&nbsp;</div></div>
+        {/if}
+
+     	{include #content}
+            <div class="footer cl"></div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+{block content}
+{control drobeckovaNavigace}
+{block title}<h1 class="oddelit">Přehled článků pro rok {$rok}</h1>{/block}
+    {if $clanky->count()}
+    <div class="archiv">
+        {var $datum='0.0.0000'}
+        {foreach $clanky as $clanek}
+            {if $datum!= $clanek['datum']->format('j.n.Y')}<div class="publikovano">{$clanek['datum']|date:'j. n. Y'}</div>{/if}
+            <ul>
+                <li><a n:href="Clanky:default $clanek['url']">{$clanek['nadpis']}</a></li>
+            </ul>
+            {var $datum = $clanek['datum']->format('j.n.Y')}    
+        {/foreach}
+    </div>
+    {else}
+    Nebyly nalezeny žádné články.
+    {/if}
+{/block content}
+{block menu}
+{control menu}
+{/block}

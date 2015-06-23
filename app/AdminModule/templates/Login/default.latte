@@ -1,0 +1,12 @@
+{var $robots = noindex}
+{block subtitle} - přihlásit{/block}
+{block #content}
+<div n:foreach="$flashes as $flash" class="flash {$flash->type}">{$flash->message}</div>
+<div id="prihlasovani">
+<h1>Přihlásit</h1>
+{control loginForm}
+<div class="center">
+<a n:href="Heslo:zapomenuteHeslo">Zapoměli jste heslo?</a>
+</div>
+<p>SVN Revision {$verze}</p>
+</div>

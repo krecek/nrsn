@@ -1,0 +1,9 @@
+{if $prilohy}
+{if count($prilohy)==1}
+<a n:href="$prilohy[0]['adresa']">{$typ}</a>
+{elseif count($prilohy)>1}
+{foreach $prilohy as $poradi=>$priloha}
+<a n:href="$prilohy[0]['adresa']">{$typ} {$poradi}</a>
+{/foreach}
+{/if}
+{/if}

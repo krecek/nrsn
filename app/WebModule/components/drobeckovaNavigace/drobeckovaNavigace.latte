@@ -1,0 +1,5 @@
+<div class="naradek mini">
+    {foreach $items as $item}
+       <a href="{plink $item['url'] $item['parametry']}">{$item['nazev']}</a> {if !$iterator->isLast()}&raquo;{/if}
+    {/foreach}
+</div>

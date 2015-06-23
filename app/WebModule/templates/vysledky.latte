@@ -1,0 +1,146 @@
+{**
+ * My Application layout template.
+ *
+ * @param string   $basePath web base path
+ * @param string   $robots   tell robots how to index the content of a page (optional)
+ * @param array    $flashes  flash messages
+ *}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="">
+        <meta name="robots" content="{$robots}" n:ifset="$robots">
+        <title>{block title|striptags|pomlcka}{/block}Česká gymnastická federace</title>
+
+        <script src="{$basePath}/js/jquery.js"></script>
+        <script src="{$basePath}/js/jquery-ui-1.10.3.custom.js"></script>
+        <!--<script src="{$basePath}/js/jquery.nette.js"></script>-->
+        <script src="{$basePath}/js/nette.ajax.js"></script>
+        <script src="{$basePath}/js/web.js"></script>
+        <script src="{$basePath}/js/menu.js"></script>
+        <script src="{$basePath}/js/lytebox/lytebox.js"></script>
+        <link rel="stylesheet" media="screen,projection,tv" href="{$basePath}/css/custom-theme/jquery-ui-1.10.4.custom.css">
+        <link rel="stylesheet" href="{$basePath}/js/lytebox/lytebox.css" type="text/css" media="screen" />
+        <link rel="stylesheet" media="screen,projection,tv,print" href="{$basePath}/css/web.css">
+        <!--[if IE 7]>
+        <link rel="stylesheet" href="{$basePath}/css/web-ie.css">
+        <![endif]-->
+         <!-- link rel="stylesheet" media="print" href="{$basePath}/css/print.css" -->
+        <link rel="shortcut icon" href="{$basePath}/favicon2.ico">
+        {!$pozadi}
+	{block head}{/block}
+    </head>
+
+    
+    <body>
+        <script>
+          (function(i,s,o,g,r,a,m){ i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          ( i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          } ) ( window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-52649305-2', 'auto');
+          ga('send', 'pageview');
+        </script>
+      <div class="bgbody">
+        <script> document.documentElement.className+=' js' </script>
+        <div class="radek top">
+        <div class="telo">
+          <div class="bez"><a n:href="Homepage:" title="Home" ><img src="/css/cgf-logo.png" alt="Česká gymnastická federace" class="logo {if $nazev_rubriky=="Česká gymnastická federace"}small{/if}" /></a><span class="topnadpis">Česká <span>gymnastická</span> federace</span></div>
+          <div class="right">{control navigace}</div> 
+        </div>
+        </div>
+    <div class="telo obsah">
+    <div class="radek"><div class="box-12">
+    {if $nazev_rubriky=="Česká gymnastická federace"}
+
+    {else}
+     <strong class="nadpis rubrika">{$nazev_rubriky}</strong>
+    {/if} 
+    </div></div>
+	  <div class="radek">
+    <div class="box-9">
+         {block topclanek}{/block}
+    <!--levý blok-->
+    
+    <div class="box-12">
+        
+        {include #content}
+    </div>
+    </div>
+   
+    </div></div>
+    
+<div class="radek spodnilista hidden-print">
+<div class="telo">
+<div id="sporty_menu">
+ {block sportyMenu}{/block}
+ <ul class="menu-sporty2 {if $nazev_rubriky=="Česká gymnastická federace"}homepg{/if}" id="sporty">
+    <li class="box-8-menu sgm"><a href="{plink Homepage:rubriky sportovni-gymnastika-muzi}"><span class="bga"></span><span>Gymnastika<br /> muži</span></a></li>
+    <li class="box-8-menu sgz"><a href="{plink Homepage:rubriky sportovni-gymnastika-zeny}"><span class="bga"></span><span>Gymnastika<br /> ženy</span></a></li>
+    <li class="box-8-menu team"><a href="{plink Homepage:rubriky teamgym}"><span class="bga"></span><span>Teamgym</span></a></li>
+    <li class="box-8-menu aero"><a href="{plink Homepage:rubriky aerobik}"><span class="bga"></span><span>Aerobik</span></a></li>
+    <li class="box-8-menu akrobatic"><a href="{plink Homepage:rubriky akrobaticka-gymnastika}"><span class="bga"></span><span>Akrobatická gymnastika</span></a></li>
+    <li class="box-8-menu tramp"><a href="{plink Homepage:rubriky skoky-na-trampoline}"><span class="bga"></span><span>Skoky na trampolíně</span></a></li>
+    <li class="box-8-menu splh"><a href="{plink Homepage:rubriky olympijsky-splh}"><span class="bga"></span><span>Olympijský<br /> šplh</span></a></li>
+    <li class="box-8-menu vseob"><a href="{plink Homepage:rubriky vseobecna-gymnastika}"><span class="bga"></span><span>Všeobecná gymnastika</span></a></li>
+
+</ul>
+ </div>
+<div class="box-3 spodnilista">
+<h3>Rychlý kontakt</h3>
+<pre>
+Česká gymnastická federace
+Zátopkova 100/2
+160 17 Praha 6
+
+tel/fax: 242 429 260
+mail:<a href="#">cgf@gymfed.cz</a>
+<a n:href="Homepage:">http://gymfed.cz</a>
+<a href="https://plus.google.com/117626082127263611524" rel="publisher">Google+</a>
+</pre></div>
+
+<div class="box-3 spodnilista">
+<h3>Sporty</h3>
+<ul>
+    <li><a href="{plink Homepage:rubriky sportovni-gymnastika-muzi}"><span>Sportovní gymnastika muži</span></a></li>
+    <li><a href="{plink Homepage:rubriky sportovni-gymnastika-zeny}"><span>Sportovní gymnastika ženy</span></a></li>
+    <li><a href="{plink Homepage:rubriky teamgym}"><span>Teamgym</span></a></li>
+    <li><a href="{plink Homepage:rubriky aerobik}"><span>Aerobik</span></a></li>
+    <li><a href="{plink Homepage:rubriky akrobaticka-gymnastika}"><span>Akrobatická gymnastika</span></a></li>
+    <li><a href="{plink Homepage:rubriky skoky-na-trampoline}"><span>Skoky na trampolíně</span></a></li>
+    <li><a href="{plink Homepage:rubriky olympijsky-splh}"><span>Olympijský šplh</span></a></li>
+    <li><a href="{plink Homepage:rubriky vseobecna-gymnastika}"><span>Všeobecná gymnastika</span></a></li>
+
+</ul> 
+</div>
+<div class="box-3 spodnilista">
+<h3>Ostatní</h3>
+<ul>
+<li><a n:href="Archiv:">Archiv článků</a></li>
+<li><a n:href="Adresar:">Adresář oddílů</a></li>
+<li><a n:href="Clanky:default '16-stanovy-a-rady'">Stanovy a řády</a></li>
+<li><a n:href="Homepage:rubriky 'o-nas'">O nás</a></li>
+<li><a n:href="Homepage:rubriky 'media'">Média</a></li>
+<li><a n:href="Homepage:rubriky 'o-nas/zpravodaj-cgf'">Zpravodaj ČGF</a></li>
+<li><a href="https://gis.gymfed.cz" target="_blank">GIS</a></li>
+<li><a href="http://gymnastika.cstv.cz" target="_blank">Starý web</a></li>
+
+
+</ul> 
+</div>
+<div class="box-3 spodnilista">
+<div class="soc"><a n:href="Homepage:rss" class="rss"></a> 
+                 <a href="https://www.facebook.com/CeskaGymnastickaFederace" target="_blank" class="fb"></a> 
+                 <a href="https://plus.google.com/u/0/communities/105872522074150743634" target="_blank" class="gp"></a> 
+                 <a href="#" class="yt"></a>
+</div>
+&copy; 2014 Česká gymnastická federace<br /> Všechna práva vyhrazena</div>
+<div class="cl"></div>
+</div>
+</div>
+      </div>
+    </body>
+</html>

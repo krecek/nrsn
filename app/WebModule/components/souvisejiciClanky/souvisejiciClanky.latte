@@ -1,0 +1,14 @@
+<div class='pg-clanky'>
+  <ul>
+   {foreach $clanky as $clanek}
+        <!--div class="clanek vypis">
+         <a href="{plink Clanky: $clanek['url']}">
+             <strong>{$clanek['nadpis']}</strong>
+         </a>   
+        </div -->
+        <li><a href="{plink Clanky: $clanek['url']}">
+        {$clanek['nadpis']}
+         </a></li>   
+    {/foreach}
+  </ul>
+</div>

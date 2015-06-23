@@ -1,0 +1,13 @@
+<div class='pg-clanky'>
+   {foreach $clanky as $clanek}
+        <div class="clanek vypis">
+         <a href="{plink Clanky: $clanek['url']}">
+            <span class="nahled-sm"><img src="{$basePath}/{$clanek['nahled']}" alt=""></span>
+            <h2 class="nadpis">{$clanek['nadpis']}</h2>
+               
+            <p class="perex">
+            <span class="datum">{$clanek->zobrazit_od|datumClanku}{if $clanek['upravil']} (upraveno {$clanek['upraveno']|datumClanku}){/if}</span>{if $clanek['perex'] && $clanek['perex']!=' '} - {$clanek['perex']} ...{/if}</p>
+         </a>   
+        </div>
+    {/foreach}
+</div>

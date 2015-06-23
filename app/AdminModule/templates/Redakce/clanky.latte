@@ -1,0 +1,85 @@
+{extends 'base.latte'}
+{block sekce}Články - {$rubrika['nazev']}{/block}
+{block obsah}
+{snippet seznamClanku}
+<table>
+    <tr>
+        <th>Nadpis</th>
+        <th>Rubrika</th>
+        <th>Platnost od</th>
+        <th>Platnost do</th>
+        <th>Hlavní strana</th>
+        <th>Top</th>
+        <th>&nbsp;</th>
+        <th>&nbsp;</th>
+    </tr>  
+ {if !count($clanky)}
+    <tr>
+        <td colspan="8">Nebyly nalezeny žádné články</td>
+    </tr>
+ {else}
+    
+    {foreach $clanky as $clanek}
+    <tr>
+        <td><a n:href="editClanek $clanek['id']">{$clanek['nadpis']}</a></td>
+        <td><a n:href="clanky $clanek['rubrika']">{$clanek['rubrika_nazev']}</a></td>
+        <td>
+            {if $clanek['prava']['publikovat']}
+                <a n:href="nastavitZacatek $clanek['id']">{$clanek['zobrazit_od']|date:'j.n.Y'}</a>
+            {else}
+                {$clanek['zobrazit_od']|date:'j.n.Y'}
+            {/if}
+        </td>
+        <td>
+            {if $clanek['prava']['edit']}
+                <a n:href="nastavitKonec $clanek['id']">{$clanek['zobrazit_do']|date:'j.n.Y'}</a>
+            {else}
+                {$clanek['zobrazit_do']|date:'j.n.Y'}
+            {/if}
+        </td>
+        <td> 
+            {if $clanek['hlavni_strana']}
+                {if $clanek['prava']['publikovat']}
+                    <a n:href="nastavitHlavniStranu! $clanek['id'],0" class="ajax">
+                       <img src="{$basePath}/css/ico-ok.gif" alt="zrušit" title="zrušit"/>
+                    </a>
+                 {else}
+                    <img src="{$basePath}/css/ico-ok.gif" alt="ano" title="ano"/>
+                 {/if}
+            {else}
+                 {if $clanek['prava']['publikovat']}
+                    <a n:href="nastavitHlavniStranu! $clanek['id'],1"  class="ajax">
+                      <img src="{$basePath}/css/ico-ok1.png" alt="nastavit" title="nastavit"/>
+                    </a>
+                  {else}
+                     <img src="{$basePath}/css/ico-ok1.png" alt="ne" title="ne"/>
+                  {/if}
+            {/if}
+        </td>
+        <td>
+            {if $clanek['top']}
+                <img src="{$basePath}/css/ico-ok.gif" alt="top" title="top"/>
+            {elseif $opravneni['nastavit_top']}
+                <a n:href="nastavitTopClanek! $clanek['id']"  class="ajax" onclick="if(!confirm('Opravdu nastavit jako top článek?'))return false;">
+                  <img src="{$basePath}/css/ico-ok1.png" alt="nastavit" title="nastavit"/>
+                </a>
+            {else}  
+                <img src="{$basePath}/css/ico-ok1.png" alt="není top" title="není top"/>
+            {/if}
+        </td>
+        <td><a href="{plink Redakce:prilohy $clanek['id']}"><img src="{$basePath}/css/ico-priloha.png" alt="přílohy" title="přílohy"/></a></td>
+        <td>
+            {if $clanek['prava']['edit']}
+                <a href="{plink Redakce:deleteClanek $clanek['id']}" onclick="if (!confirm('Opravdu smazat článek?')) return false;">
+                    <img src="{$basePath}/css/ico-del.gif" alt="smazat článek" title="smazat článek"/>
+                </a>
+            {else}&nbsp;
+            {/if}
+            
+        </td>
+       
+    </tr>
+    {/foreach}
+    {/if}
+</table>
+{/snippet}

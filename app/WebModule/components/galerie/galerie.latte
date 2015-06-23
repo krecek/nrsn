@@ -1,0 +1,9 @@
+{if $pocet_obrazku}
+<div class="galerie">
+{foreach $obrazky as $adresa=>$priloha}
+    <a href="{$basePath}/{$adresa}" rel="lytebox[1]"><img src="{$basePath}/{$priloha['nahled']}" alt="{$priloha['nazev']}" title="{$priloha['nazev']}"/></a>
+
+ {/foreach}
+</div>
+
+{/if}

@@ -1,0 +1,13 @@
+{extends 'base.latte'}
+{block head}
+<script>
+    {if $clanek['top']=='A'}
+        $(document).ready(function() {
+            $(".datepicker").datepicker( "option", "maxDate", new Date );
+        });
+    {/if}
+</script>
+{/block} 
+{block sekce}Aktivace článku - {$clanek['nadpis']}{/block}
+{block obsah}
+{control nastavitDatumOdForm}

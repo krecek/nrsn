@@ -1,0 +1,10 @@
+{extends 'base.latte'}
+{block sekce}Úprava osobních údajů{if $admin} - {$osoba['jmeno']} {$osoba['prijmeni']}{/if}{/block}
+{block obsah}
+{control upravitOsobuForm}
+{if $admin}
+<div class="bottom_nav">
+         <a n:href="prehled $osoba['id']">zpět na osobu</a>
+</div>
+{/if}
+{/block}
